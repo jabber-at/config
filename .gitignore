@@ -1,3 +1,4 @@
 secrets.cfg
+ejabberd.pem
 *.swp
 *.swo
