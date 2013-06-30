@@ -1,0 +1,2 @@
+{acl, blocked, {user, "user", "example.com"}}.
+{acl, blocked, {user, "user", "example.net"}}.
