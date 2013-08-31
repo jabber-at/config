@@ -2,3 +2,5 @@ secrets.cfg
 ejabberd.pem
 *.swp
 *.swo
+blocked.cfg
+*.backup
