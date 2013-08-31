@@ -1,5 +1,5 @@
 secrets.cfg
-ejabberd.pem
+*.pem
 *.swp
 *.swo
 blocked.cfg
