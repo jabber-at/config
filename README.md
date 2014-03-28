@@ -1,6 +1,6 @@
-These are the configuration files used for https://jabber.at. We use ejabberd,
-at present version 2.1.13 and therefor still the erlang-based configuration
-files.
+These are the configuration files used for our ejabberd installation at
+jabber.at. At present we still use version 2.1.13 and therefor still the
+erlang-based configuration files.
 
 There are two files that are not included in the repository:
 
