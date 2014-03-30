@@ -4,3 +4,4 @@ secrets.cfg
 *.swo
 blocked.cfg
 *.backup
+*.ucf-dist
