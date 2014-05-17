@@ -1,0 +1,54 @@
+acl: 
+  admin: 
+    user: 
+      - 
+        "klausi": "jabber.at"
+      - 
+        "astra": "jabber.at"
+      - 
+        "mati": "jabber.at"
+  blocked: 
+    server: 
+      - "gtalk2voip.com"
+      - "talkonaut.com"
+      - "syriatalk.org"
+    user: 
+      - "webmaster"
+      - "root"
+      - "postmaster"
+      - "jabber.fsinf.at"
+      - "jabber"
+      - "hostmaster"
+      - "fsinf.at"
+      - "fsinf"
+      - "ejabberd"
+      - "admin"
+    user_regexp: 
+      - "^.*owner.*$"
+      - "^.*admin.*$"
+  fsinf_at: 
+    server: 
+      - "atlas.fsinf.at"
+  jabber_at: 
+    server: 
+      - "pan.fsinf.at"
+  jabber_fsinf_at: 
+    server: 
+      - "janus.fsinf.at"
+  local: 
+    server: 
+      - "janus.fsinf.at"
+      - "atlas.fsinf.at"
+      - "pan.fsinf.at"
+  muc_admin: 
+    user: 
+      - 
+        "viper": "jabber.at"
+      - 
+        "tom": "fnord.at"
+      - 
+        "srecnig": "jabber.fsinf.at"
+      - 
+        "nospam": "jabber.at"
+      - 
+        "michaelpuermayr": "jabber.at"

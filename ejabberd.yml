@@ -1,0 +1,330 @@
+host_config: 
+  "jabber.fsinf.at": 
+    acl: 
+      admin: 
+        user: 
+          - 
+            "fabian": "fsinf.at"
+    modules: 
+      mod_disco: 
+        server_info: 
+          - 
+            - 
+              modules: 
+                - mod_muc
+              name: "Chatroom logs"
+              urls: 
+                - "http://jabber.at/logs"
+        extra_domains: 
+          - "conference.fsinf.at"
+          - "conference.jabber.at"
+          - "proxy.jabber.at"
+          - "irc.jabber.at"
+          - "webpresence.jabber.at"
+      mod_roster: 
+        versioning: true
+        store_current_id: true
+      mod_privacy: []
+      mod_blocking: []
+      mod_offline: []
+      mod_private: []
+      mod_last: []
+      mod_adhoc: []
+      mod_configure: []
+      mod_stats: []
+      mod_announce: 
+        access: admin
+      mod_time: []
+      mod_ping: 
+        send_pings: true
+        ping_interval: 60
+        timeout_action: kill
+      mod_version: []
+      mod_http_bind: []
+      mod_echo: []
+      mod_caps: []
+      mod_register: 
+        access: jabber_at
+        captcha_protected: true
+        registration_watchers: 
+          - "registration@jabber.at"
+      mod_vcard: []
+      mod_pubsub: 
+        access_createnode: everybody
+        plugins: 
+          - "flat"
+          - "hometree"
+          - "pep"
+      mod_pres_counter: 
+        count: 5
+        interval: 60
+      mod_sic: []
+      mod_admin_extra: []
+      mod_muc_admin: []
+host_config: 
+  "jabber.at": 
+    acl: 
+      admin: 
+        user: 
+          - 
+            "ra": "jabber.at"
+          - 
+            "klausi": "jabber.at"
+    modules: 
+      mod_disco: 
+        server_info: 
+          - 
+            - 
+              modules: 
+                - mod_muc
+              name: "Chatroom logs"
+              urls: 
+                - "https://jabber.at/logs"
+      mod_muc: 
+        access: everybody
+        access_create: local
+        access_admin: muc_admin
+        moderated: false
+        allow_user_invites: true
+        max_user_conferences: 10
+        min_message_interval: 1
+        min_presence_interval: 5
+      mod_proxy65: 
+        shaper: proxy_shaper
+        max_connections: 10
+        access: local
+      mod_irc: 
+        access: all
+        default_encoding: "utf-8"
+      mod_muc_log: 
+        access_log: everybody
+        timezone: local
+        outdir: "/var/www/jabber.at/sites/jabber.at/logs"
+        file_permissions: 
+          mode: 644
+          group: 33
+        spam_prevention: true
+      mod_webpresence: 
+        pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
+        baseurl: "https://jabber.at/presence/"
+        access: local
+      mod_roster: 
+        versioning: true
+        store_current_id: true
+      mod_privacy: []
+      mod_blocking: []
+      mod_offline: []
+      mod_private: []
+      mod_last: []
+      mod_adhoc: []
+      mod_configure: []
+      mod_stats: []
+      mod_announce: 
+        access: admin
+      mod_time: []
+      mod_ping: 
+        send_pings: true
+        ping_interval: 60
+        timeout_action: kill
+      mod_version: []
+      mod_http_bind: []
+      mod_echo: []
+      mod_caps: []
+      mod_register: 
+        access: jabber_at
+        captcha_protected: true
+        registration_watchers: 
+          - "registration@jabber.at"
+      mod_vcard: []
+      mod_pubsub: 
+        access_createnode: everybody
+        plugins: 
+          - "flat"
+          - "hometree"
+          - "pep"
+      mod_pres_counter: 
+        count: 5
+        interval: 60
+      mod_sic: []
+      mod_admin_extra: []
+      mod_muc_admin: []
+host_config: 
+  "fsinf.at": 
+    acl: 
+      admin: 
+        user: 
+          - 
+            "fabian": "fsinf.at"
+    modules: 
+      mod_disco: 
+        server_info: 
+          - 
+            - 
+              modules: 
+                - mod_muc
+              name: "Chatroom logs"
+              urls: 
+                - "http://jabber.at/logs"
+        extra_domains: 
+          - "conference.jabber.at"
+          - "irc.jabber.at"
+          - "proxy.jabber.at"
+          - "webpresence.jabber.at"
+      mod_muc: 
+        access: everybody
+        access_create: local
+        access_admin: muc_admin
+        moderated: false
+        allow_user_invites: true
+        min_message_interval: 1
+        min_presence_interval: 5
+      mod_muc_log: 
+        access_log: everybody
+        outdir: "/var/www/jabber.at/sites/jabber.at/logs"
+        file_permissions: 
+          mode: 644
+          group: 33
+        timezone: local
+      mod_roster: 
+        versioning: true
+        store_current_id: true
+      mod_privacy: []
+      mod_blocking: []
+      mod_offline: []
+      mod_private: []
+      mod_last: []
+      mod_adhoc: []
+      mod_configure: []
+      mod_stats: []
+      mod_announce: 
+        access: admin
+      mod_time: []
+      mod_ping: 
+        send_pings: true
+        ping_interval: 60
+        timeout_action: kill
+      mod_version: []
+      mod_http_bind: []
+      mod_echo: []
+      mod_caps: []
+      mod_register: 
+        access: jabber_at
+        captcha_protected: true
+        registration_watchers: 
+          - "registration@jabber.at"
+      mod_vcard: []
+      mod_pubsub: 
+        access_createnode: everybody
+        plugins: 
+          - "flat"
+          - "hometree"
+          - "pep"
+      mod_pres_counter: 
+        count: 5
+        interval: 60
+      mod_sic: []
+      mod_admin_extra: []
+      mod_muc_admin: []
+hosts: 
+  - "jabber.at"
+  - "fsinf.at"
+  - "jabber.fsinf.at"
+access: 
+  admin: 
+    blocked: deny
+    admin: allow
+  c2s_shaper: 
+    admin: none
+    everybody: normal
+  configure: 
+    blocked: deny
+    admin: allow
+  everybody: 
+    blocked: deny
+    all: allow
+  fsinf_at: 
+    blocked: deny
+    fsinf_at: allow
+  jabber_at: 
+    blocked: deny
+    jabber_at: allow
+  jabber_fsinf_at: 
+    blocked: deny
+    jabber_fsinf_at: allow
+  local: 
+    blocked: deny
+    local: allow
+  max_user_offline_messages: 
+    admin: 2000
+    everybody: 100
+  max_user_sessions: 
+    admin: infinity
+    everybody: 3
+  muc_admin: 
+    blocked: deny
+    admin: allow
+    muc_admin: allow
+  proxy_shaper: 
+    admin: none
+    everybody: proxy
+  s2s_shaper: 
+    everybody: fast
+auth_method: internal
+captcha_cmd: "/usr/lib/ejabberd/priv/bin/captcha.sh"
+captcha_host: "https://jabber.at:443"
+include_config_file: 
+  "/etc/ejabberd/acl.cfg": []
+  "/etc/ejabberd/blocked.cfg": []
+  "/etc/ejabberd/secrets.cfg": []
+  "/etc/ejabberd/ports.cfg": []
+language: "en"
+loglevel: 2
+modules: 
+  mod_roster: 
+    versioning: true
+    store_current_id: true
+  mod_privacy: []
+  mod_blocking: []
+  mod_offline: []
+  mod_private: []
+  mod_last: []
+  mod_adhoc: []
+  mod_configure: []
+  mod_stats: []
+  mod_announce: 
+    access: admin
+  mod_time: []
+  mod_ping: 
+    send_pings: true
+    ping_interval: 60
+    timeout_action: kill
+  mod_version: []
+  mod_http_bind: []
+  mod_echo: []
+  mod_caps: []
+  mod_register: 
+    access: jabber_at
+    captcha_protected: true
+    registration_watchers: 
+      - "registration@jabber.at"
+  mod_vcard: []
+  mod_pubsub: 
+    access_createnode: everybody
+    plugins: 
+      - "flat"
+      - "hometree"
+      - "pep"
+  mod_pres_counter: 
+    count: 5
+    interval: 60
+  mod_sic: []
+  mod_admin_extra: []
+  mod_muc_admin: []
+registration_timeout: 3600
+shaper: 
+  normal: 500
+  proxy: 3000
+  fast: 50000
+welcome_message: 
+  subject: "Welcome!"
+  body: "Welcome to the jabber.at, a Jabber service provided by the Fachschaft Informatik."
