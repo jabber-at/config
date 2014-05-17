@@ -1,12 +1,9 @@
 acl: 
   admin: 
     user: 
-      - 
-        "klausi": "jabber.at"
-      - 
-        "astra": "jabber.at"
-      - 
-        "mati": "jabber.at"
+      - "klausi": "jabber.at"
+      - "astra": "jabber.at"
+      - "mati": "jabber.at"
   blocked: 
     server: 
       - "gtalk2voip.com"
@@ -42,13 +39,8 @@ acl:
       - "pan.fsinf.at"
   muc_admin: 
     user: 
-      - 
-        "viper": "jabber.at"
-      - 
-        "tom": "fnord.at"
-      - 
-        "srecnig": "jabber.fsinf.at"
-      - 
-        "nospam": "jabber.at"
-      - 
-        "michaelpuermayr": "jabber.at"
+      - "viper": "jabber.at"
+      - "tom": "fnord.at"
+      - "srecnig": "jabber.fsinf.at"
+      - "nospam": "jabber.at"
+      - "michaelpuermayr": "jabber.at"
