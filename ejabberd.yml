@@ -23,7 +23,8 @@ welcome_message:
 #####################
 ### Include files ###
 #####################
-include_config_file: 
+include_config_file:
+  "/etc/ejabberd/macros.yml": []
   "/etc/ejabberd/acl.yml": []
   "/etc/ejabberd/access.yml": []
   "/etc/ejabberd/blocked.yml": []

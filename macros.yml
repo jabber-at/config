@@ -1,0 +1,4 @@
+define_macro:
+  JABBER_AT: 'jabber.at'
+  JABBER_FSINF_AT: 'jabber.fsinf.at'
+  FSINF_AT: 'fsinf.at'
