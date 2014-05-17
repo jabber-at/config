@@ -1,13 +1,3 @@
-host_config: 
-  'JABBER_FSINF_AT': 
-    domain_certfile: 'CERT_LOCATION_JABBER_FSINF_AT'
-
-  'JABBER_AT': 
-    domain_certfile: 'CERT_LOCATION_JABBER_AT'
-
-  'FSINF_AT': 
-    domain_certfile: 'CERT_LOCATION_FSINF_AT'
-
 listen: 
   - 
     port: 5349

@@ -42,7 +42,8 @@ captcha_host: "https://jabber.at:443"
 ### Host configuration ###
 ##########################
 host_config: 
-  'JABBER_AT': 
+  'JABBER_AT':
+    domain_certfile: 'CERT_LOCATION_JABBER_AT'
     acl: 
       admin: 
         user: 
@@ -50,13 +51,15 @@ host_config:
           - "klausi": 'JABBER_AT'
 
 
-  'JABBER_FSINF_AT': 
+  'JABBER_FSINF_AT':
+    domain_certfile: 'CERT_LOCATION_JABBER_FSINF_AT'
     acl: 
       admin: 
         user: 
           - "fabian": 'FSINF_AT'
 
   'FSINF_AT': 
+    domain_certfile: 'CERT_LOCATION_FSINF_AT'
     acl: 
       admin: 
         user: 
