@@ -4,9 +4,9 @@
 # Names this node should listen on. Note that you will have to configure a
 # host_config section, before you can actually use a new server.
 hosts: 
-  - "jabber.at"
-  - "fsinf.at"
-  - "jabber.fsinf.at"
+  - 'JABBER_AT'
+  - 'JABBER_FSINF_AT'
+  - 'FSINF_AT'
 
 # only one registration per hour per IP:
 registration_timeout: 3600
@@ -46,19 +46,19 @@ host_config:
     acl: 
       admin: 
         user: 
-          - "ra": "jabber.at"
-          - "klausi": "jabber.at"
+          - "ra": 'JABBER_AT'
+          - "klausi": 'JABBER_AT'
 
 
   "jabber.fsinf.at": 
     acl: 
       admin: 
         user: 
-          - "fabian": "fsinf.at"
+          - "fabian": 'FSINF_AT'
 
   "fsinf.at": 
     acl: 
       admin: 
         user: 
           - 
-            "fabian": "fsinf.at"
+            "fabian": 'FSINF_AT'

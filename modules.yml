@@ -41,7 +41,7 @@ modules:
   mod_muc_admin: []
 
 append_host_config:
-  "jabber.at":
+  'JABBER_AT':
     modules:
       mod_disco:
         server_info:
@@ -79,7 +79,7 @@ append_host_config:
         baseurl: "https://jabber.at/presence/"
         access: local
 
-  "jabber.fsinf.at":
+  'JABBER_FSINF_AT':
     modules:
       mod_disco:
         server_info:
@@ -95,7 +95,7 @@ append_host_config:
           - "irc.jabber.at"
           - "webpresence.jabber.at"
 
-  "fsinf.at":
+  'FSINF_AT':
     modules:
       mod_disco:
         server_info:

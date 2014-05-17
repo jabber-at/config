@@ -1,22 +1,23 @@
 acl: 
   admin: 
     user: 
-      - "klausi": "jabber.at"
-      - "astra": "jabber.at"
-      - "mati": "jabber.at"
+      - "klausi": 'JABBER_AT'
+      - "astra": 'JABBER_AT'
+      - "mati": 'JABBER_AT'
   blocked: 
     server: 
       - "gtalk2voip.com"
       - "talkonaut.com"
       - "syriatalk.org"
     user: 
+      - 'JABBER_AT'
+      - 'JABBER_FSINF_AT'
+      - 'FSINF_AT'
       - "webmaster"
       - "root"
       - "postmaster"
-      - "jabber.fsinf.at"
       - "jabber"
       - "hostmaster"
-      - "fsinf.at"
       - "fsinf"
       - "ejabberd"
       - "admin"
@@ -25,22 +26,22 @@ acl:
       - "^.*admin.*$"
   fsinf_at: 
     server: 
-      - "atlas.fsinf.at"
+      - 'FSINF_AT'
   jabber_at: 
     server: 
-      - "pan.fsinf.at"
+      - 'JABBER_AT'
   jabber_fsinf_at: 
     server: 
-      - "janus.fsinf.at"
+      - 'JABBER_FSINF_AT'
   local: 
     server: 
-      - "janus.fsinf.at"
-      - "atlas.fsinf.at"
-      - "pan.fsinf.at"
+      - 'JABBER_AT'
+      - 'JABBER_FSINF_AT'
+      - 'FSINF_AT'
   muc_admin: 
     user: 
-      - "viper": "jabber.at"
+      - "viper": 'JABBER_AT'
       - "tom": "fnord.at"
-      - "srecnig": "jabber.fsinf.at"
-      - "nospam": "jabber.at"
-      - "michaelpuermayr": "jabber.at"
+      - "srecnig": 'JABBER_FSINF_AT'
+      - "nospam": 'JABBER_AT'
+      - "michaelpuermayr": 'JABBER_AT'
