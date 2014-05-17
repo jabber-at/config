@@ -78,29 +78,6 @@ append_host_config:
         pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
         baseurl: "https://jabber.at/presence/"
         access: local
-      mod_roster:
-        versioning: true
-        store_current_id: true
-      mod_offline: []
-      mod_private: []
-      mod_last: []
-      mod_announce:
-        access: admin
-      mod_http_bind: []
-      mod_register:
-        access: jabber_at
-        captcha_protected: true
-        registration_watchers:
-          - "registration@jabber.at"
-      mod_pubsub:
-        access_createnode: everybody
-        plugins:
-          - "flat"
-          - "hometree"
-          - "pep"
-      mod_pres_counter:
-        count: 5
-        interval: 60
 
   "jabber.fsinf.at":
     modules:
@@ -117,29 +94,6 @@ append_host_config:
           - "proxy.jabber.at"
           - "irc.jabber.at"
           - "webpresence.jabber.at"
-      mod_roster:
-        versioning: true
-        store_current_id: true
-      mod_offline: []
-      mod_private: []
-      mod_last: []
-      mod_announce:
-        access: admin
-      mod_http_bind: []
-      mod_register:
-        access: jabber_at
-        captcha_protected: true
-        registration_watchers:
-          - "registration@jabber.at"
-      mod_pubsub:
-        access_createnode: everybody
-        plugins:
-          - "flat"
-          - "hometree"
-          - "pep"
-      mod_pres_counter:
-        count: 5
-        interval: 60
 
   "fsinf.at":
     modules:
@@ -170,26 +124,3 @@ append_host_config:
           mode: 644
           group: 33
         timezone: local
-      mod_roster:
-        versioning: true
-        store_current_id: true
-      mod_offline: []
-      mod_private: []
-      mod_last: []
-      mod_announce:
-        access: admin
-      mod_http_bind: []
-      mod_register:
-        access: jabber_at
-        captcha_protected: true
-        registration_watchers:
-          - "registration@jabber.at"
-      mod_pubsub:
-        access_createnode: everybody
-        plugins:
-          - "flat"
-          - "hometree"
-          - "pep"
-      mod_pres_counter:
-        count: 5
-        interval: 60
