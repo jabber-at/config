@@ -2,11 +2,9 @@ host_config:
   'JABBER_FSINF_AT': 
     domain_certfile: 'CERT_LOCATION_JABBER_FSINF_AT'
 
-host_config: 
   'JABBER_AT': 
     domain_certfile: 'CERT_LOCATION_JABBER_AT'
 
-host_config: 
   'FSINF_AT': 
     domain_certfile: 'CERT_LOCATION_FSINF_AT'
 
