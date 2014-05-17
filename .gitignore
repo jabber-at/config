@@ -1,7 +1,9 @@
 secrets.cfg
+secrets.yml
 *.pem
 *.swp
 *.swo
 blocked.cfg
+blocked.yml
 *.backup
 *.ucf-dist
