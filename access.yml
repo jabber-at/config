@@ -1,0 +1,40 @@
+access:
+  admin:
+    blocked: deny
+    admin: allow
+  c2s_shaper:
+    admin: none
+    everybody: normal
+  configure:
+    blocked: deny
+    admin: allow
+  everybody:
+    blocked: deny
+    all: allow
+  fsinf_at:
+    blocked: deny
+    fsinf_at: allow
+  jabber_at:
+    blocked: deny
+    jabber_at: allow
+  jabber_fsinf_at:
+    blocked: deny
+    jabber_fsinf_at: allow
+  local:
+    blocked: deny
+    local: allow
+  max_user_offline_messages:
+    admin: 2000
+    everybody: 100
+  max_user_sessions:
+    admin: infinity
+    everybody: 3
+  muc_admin:
+    blocked: deny
+    admin: allow
+    muc_admin: allow
+  proxy_shaper:
+    admin: none
+    everybody: proxy
+  s2s_shaper:
+    everybody: fast

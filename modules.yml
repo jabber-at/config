@@ -1,0 +1,41 @@
+modules:
+  mod_roster:
+    versioning: true
+    store_current_id: true
+  mod_privacy: []
+  mod_blocking: []
+  mod_offline: []
+  mod_private: []
+  mod_last: []
+  mod_adhoc: []
+  mod_configure: []
+  mod_stats: []
+  mod_announce:
+    access: admin
+  mod_time: []
+  mod_ping:
+    send_pings: true
+    ping_interval: 60
+    timeout_action: kill
+  mod_version: []
+  mod_http_bind: []
+  mod_echo: []
+  mod_caps: []
+  mod_register:
+    access: jabber_at
+    captcha_protected: true
+    registration_watchers:
+      - "registration@jabber.at"
+  mod_vcard: []
+  mod_pubsub:
+    access_createnode: everybody
+    plugins:
+      - "flat"
+      - "hometree"
+      - "pep"
+  mod_pres_counter:
+    count: 5
+    interval: 60
+  mod_sic: []
+  mod_admin_extra: []
+  mod_muc_admin: []
