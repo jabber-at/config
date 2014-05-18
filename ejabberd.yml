@@ -27,7 +27,7 @@ include_config_file:
   "/etc/ejabberd/macros.yml": []
   "/etc/ejabberd/acl.yml": []
   "/etc/ejabberd/access.yml": []
-  "/etc/ejabberd/blocked.yml": []
+#  "/etc/ejabberd/blocked.yml": []
   "/etc/ejabberd/secrets.yml": []
   "/etc/ejabberd/ports.yml": []
   "/etc/ejabberd/modules.yml": []
