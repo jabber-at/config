@@ -18,7 +18,7 @@ shaper:
   fast: 50000
 welcome_message: 
   subject: "Welcome!"
-  body: "Welcome to the jabber.at, a Jabber service provided by the Fachschaft Informatik."
+  body: "Welcome to jabber.at, a Jabber service provided by the Fachschaft Informatik."
 
 #####################
 ### Include files ###
