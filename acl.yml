@@ -1,9 +1,9 @@
 acl: 
   admin: 
     user: 
-      - "klausi": 'JABBER_AT'
-      - "astra": 'JABBER_AT'
-      - "mati": 'JABBER_AT'
+      - "klausi": "jabber.at"
+      - "astra": "jabber.at"
+      - "mati": "jabber.at"
   local:
     user_regexp: ""
   loopback:
@@ -15,9 +15,9 @@ acl:
       - "talkonaut.com"
       - "syriatalk.org"
     user: 
-      - 'JABBER_AT'
-      - 'JABBER_FSINF_AT'
-      - 'FSINF_AT'
+      - "jabber.at"
+      - "jabber.fsinf.at"
+      - "fsinf.at"
       - "webmaster"
       - "root"
       - "postmaster"
@@ -31,22 +31,22 @@ acl:
       - "^.*admin.*$"
   fsinf_at: 
     server: 
-      - 'FSINF_AT'
+      - "fsinf.at"
   jabber_at: 
     server: 
-      - 'JABBER_AT'
+      - "jabber.at"
   jabber_fsinf_at: 
     server: 
-      - 'JABBER_FSINF_AT'
+      - "jabber.fsinf.at"
   local: 
     server: 
-      - 'JABBER_AT'
-      - 'JABBER_FSINF_AT'
-      - 'FSINF_AT'
+      - "jabber.at"
+      - "jabber.fsinf.at"
+      - "fsinf.at"
   muc_admin: 
     user: 
-      - "viper": 'JABBER_AT'
+      - "viper": "jabber.at"
       - "tom": "fnord.at"
-      - "srecnig": 'JABBER_FSINF_AT'
-      - "nospam": 'JABBER_AT'
-      - "michaelpuermayr": 'JABBER_AT'
+      - "srecnig": "jabber.fsinf.at"
+      - "nospam": "jabber.at"
+      - "michaelpuermayr": "jabber.at"
