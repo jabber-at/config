@@ -1,12 +1,10 @@
 listen: 
-  - 
-    port: 5349
+  - port: 5349
     module: ejabberd_stun
-  - 
-    ip: "127.0.0.1"
+  - ip: "127.0.0.1"
     port: 4560
     module: ejabberd_xmlrpc
-  - 
+  - ip: "::"
     port: 5222
     module: ejabberd_c2s
     max_stanza_size: 65536
@@ -14,75 +12,61 @@ listen:
     access: everybody
     starttls_required: true
     zlib: true
-  - 
-    port: 5223
-    module: ejabberd_c2s
-    max_stanza_size: 65536
-    certfile: CERT_LOCATION
-    shaper: c2s_shaper
-    access: everybody
-    tls: true
-    zlib: true
-  - 
+  - ip: "::"
     port: 5269
     module: ejabberd_s2s_in
-  - 
-    port: 5280
+  - port: 5280
     module: ejabberd_http
     request_handlers: 
       "/presence": mod_webpresence
     access: local
     http_bind: true
     captcha: true
-  - 
-    ip: "127.0.0.1"
+  - ip: "127.0.0.1"
     port: 5281
     module: ejabberd_http
     web_admin: true
-  - 
-    ip: "127.0.0.1"
+  - ip: "127.0.0.1"
     port: 5401
     module: ejabberd_service
     hosts: 
       "icq.jabber.at": 
-        password: ICQ_JABBER_AT_PASSWORD
+        password: 'ICQ_JABBER_AT_PASSWORD'
     access: everybody
-  - 
-    ip: "127.0.0.1"
+  - ip: "127.0.0.1"
     port: 5403
     module: ejabberd_service
     hosts: 
       "aim.jabber.at": 
-        password: AIM_JABBER_AT_PASSWORD
+        password: 'AIM_JABBER_AT_PASSWORD'
     access: everybody
-  - 
-    ip: "127.0.0.1"
+  - ip: "127.0.0.1"
     port: 5404
     module: ejabberd_service
     hosts: 
       "gg.jabber.at": 
-        password: GG_JABBER_AT_PASSWORD
+        password: 'GG_JABBER_AT_PASSWORD'
     access: everybody
-  - 
-    ip: "127.0.0.1"
+  - ip: "127.0.0.1"
     port: 5407
     module: ejabberd_service
     hosts: 
       "simple.jabber.at": 
-        password: SIMPLE_JABBER_AT_PASSWORD
+        password: 'SIMPLE_JABBER_AT_PASSWORD'
     access: everybody
-  - 
-    ip: "127.0.0.1"
+  - ip: "127.0.0.1"
     port: 5409
     module: ejabberd_service
     hosts: 
       "yahoo.jabber.at": 
-        password: YAHOO_JABBER_AT_PASSWORD
+        password: 'YAHOO_JABBER_AT_PASSWORD'
     access: everybody
+
 outgoing_s2s_families: 
   - ipv6
   - ipv4
+
 outgoing_s2s_port: 5269
 outgoing_s2s_timeout: 10000
-s2s_certfile: CERT_LOCATION
+s2s_certfile: 'CERT_LOCATION'
 s2s_use_starttls: required
