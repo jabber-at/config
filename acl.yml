@@ -4,6 +4,11 @@ acl:
       - "klausi": 'JABBER_AT'
       - "astra": 'JABBER_AT'
       - "mati": 'JABBER_AT'
+  local:
+    user_regexp: ""
+  loopback:
+    ip:
+      - "127.0.0.0/8"
   blocked: 
     server: 
       - "gtalk2voip.com"
