@@ -4,18 +4,22 @@
 # Names this node should listen on. Note that you will have to configure a
 # host_config section, before you can actually use a new server.
 hosts: 
-  - 'JABBER_AT'
-  - 'JABBER_FSINF_AT'
-  - 'FSINF_AT'
+  - "jabber.at"
+  - "jabber.fsinf.at"
+  - "fsinf.at"
 
 # only one registration per hour per IP:
-registration_timeout: 3600
 language: "en"
+auth_method: internal
+registration_timeout: 3600
+captcha_cmd: "/usr/lib/ejabberd/priv/bin/captcha.sh"
+captcha_host: "https://jabber.at:443"
 loglevel: 2
 shaper: 
   normal: 500
   proxy: 3000
   fast: 50000
+
 welcome_message: 
   subject: "Welcome!"
   body: "Welcome to jabber.at, a Jabber service provided by the Fachschaft Informatik."
@@ -32,36 +36,30 @@ include_config_file:
   "/etc/ejabberd/ports.yml": []
   "/etc/ejabberd/modules.yml": []
 
-################
-### CAPTCHAs ###
-################
-captcha_cmd: "/usr/lib/ejabberd/priv/bin/captcha.sh"
-captcha_host: "https://jabber.at:443"
-
 ##########################
 ### Host configuration ###
 ##########################
 host_config: 
-  'JABBER_AT':
+  "jabber.at":
     domain_certfile: 'CERT_LOCATION_JABBER_AT'
     acl: 
       admin: 
         user: 
-          - "ra": 'JABBER_AT'
-          - "klausi": 'JABBER_AT'
+          - "ra": "jabber.at"
+          - "klausi": "jabber.at"
 
 
-  'JABBER_FSINF_AT':
+  "jabber.fsinf.at":
     domain_certfile: 'CERT_LOCATION_JABBER_FSINF_AT'
     acl: 
       admin: 
         user: 
-          - "fabian": 'FSINF_AT'
+          - "fabian": "fsinf.at"
 
-  'FSINF_AT': 
+  "fsinf.at": 
     domain_certfile: 'CERT_LOCATION_FSINF_AT'
     acl: 
       admin: 
         user: 
           - 
-            "fabian": 'FSINF_AT'
+            "fabian": "fsinf.at"
