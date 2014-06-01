@@ -27,6 +27,7 @@ modules:
     registration_watchers:
       - "registration@jabber.at"
   mod_vcard: {}
+  mod_vcard_xupdate: {}
   mod_pubsub:
     access_createnode: everybody
     plugins:
@@ -37,6 +38,7 @@ modules:
     count: 5
     interval: 60
   mod_sic: {}
+  mod_sip: {}
   mod_admin_extra: {}
   mod_muc_admin: {}
 
