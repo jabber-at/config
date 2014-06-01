@@ -24,6 +24,16 @@ welcome_message:
   subject: "Welcome!"
   body: "Welcome to jabber.at, a Jabber service provided by the Fachschaft Informatik."
 
+# The default ciphers-setting is found here:
+#    https://github.com/processone/tls/blob/master/c_src/p1_tls_drv.c
+# We use the default and exclude a few additional ciphers classified as weak
+# by xmpp.net.
+define_macro:
+  'TLS_OPTIONS':
+    - "no_sslv2"
+    - "no_sslv3"
+  'TLS_CIPHERS': "DEFAULT:!EXPORT:!LOW:!RC4:!SSLv2:!DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!ECDHE-RSA-DES-CBC3-SHA"
+
 #####################
 ### Include files ###
 #####################

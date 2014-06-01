@@ -11,6 +11,8 @@ listen:
     shaper: c2s_shaper
     access: everybody
     starttls_required: true
+    protocol_options: 'TLS_OPTIONS'
+    ciphers: 'TLS_CIPHERS'
     zlib: true
   - ip: "::"
     port: 5269
@@ -70,3 +72,5 @@ outgoing_s2s_port: 5269
 outgoing_s2s_timeout: 10000
 s2s_certfile: 'CERT_LOCATION'
 s2s_use_starttls: required
+s2s_protocol_options: 'TLS_OPTIONS'
+s2s_ciphers: 'TLS_CIPHERS'
