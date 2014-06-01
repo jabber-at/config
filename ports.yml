@@ -1,9 +1,18 @@
 listen: 
   - port: 5349
     module: ejabberd_stun
+    tls: true
+    certfile: 'CERT_LOCATION'
+    use_turn: true
+    turn_ip: "128.130.95.63"
   - ip: "127.0.0.1"
     port: 4560
     module: ejabberd_xmlrpc
+  - ip: "::"
+    port: 5061
+    module: ejabberd_sip
+    tls: true
+    certfile: 'CERT_LOCATION'
   - ip: "::"
     port: 5222
     module: ejabberd_c2s
