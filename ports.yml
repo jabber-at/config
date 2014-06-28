@@ -5,6 +5,8 @@ listen:
     certfile: 'CERT_LOCATION'
     use_turn: true
     turn_ip: "128.130.95.63"
+    turn_min_port: 49152
+    turn_max_port: 50000
   - ip: "127.0.0.1"
     port: 4560
     module: ejabberd_xmlrpc
