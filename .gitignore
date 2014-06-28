@@ -7,3 +7,4 @@ blocked.cfg
 blocked.yml
 *.backup
 *.ucf-dist
+*.ucf-old
