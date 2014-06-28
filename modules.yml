@@ -4,6 +4,7 @@ modules:
     access: admin
   mod_blocking: {}
   mod_caps: {}
+  mod_carboncopy: {}
   mod_configure: {}
   mod_echo: {}
   mod_http_bind: {}
