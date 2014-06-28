@@ -1,0 +1,4 @@
+acl: 
+    server: 
+      - "jabber.at"
+      - "jabber.fsinf.at"
