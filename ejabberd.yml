@@ -20,10 +20,6 @@ shaper:
   proxy: 3000
   fast: 50000
 
-welcome_message: 
-  subject: "Welcome!"
-  body: "Welcome to jabber.at, a Jabber service provided by the Fachschaft Informatik."
-
 # The default ciphers-setting is found here:
 #    https://github.com/processone/tls/blob/master/c_src/p1_tls_drv.c
 # We use the default and exclude a few additional ciphers classified as weak

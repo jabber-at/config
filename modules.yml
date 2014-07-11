@@ -30,6 +30,23 @@ modules:
     captcha_protected: true
     registration_watchers:
       - "registration@jabber.at"
+    welcome_message:
+        subject: "Welcome to jabber.at!"
+        body: |-
+            Welcome to jabber.at, a Jabber service provided by the Fachschaft Informatik.
+            
+            For more information about this service as well as news and announcements,
+            please visit https://jabber.at. If you need more information about jabber in
+            general, see http://en.wikipedia.org/wiki/Jabber.
+            
+            Please register your E-Mail address at https://account.jabber.at/reset/email/
+            if you want to be able to reset your password in case you loose it. Unused
+            accounts will be deleted after 12 months of inactivity.
+            
+            Also follow our twitter account at https://twitter.com/jabber_at or on facebook
+            at https://www.facebook.com/pages/jabberat/1453641724899241 - we
+            provide fast service updates there, especially if our service happens to
+            be unavailable.
   mod_roster:
     versioning: true
     store_current_id: true
