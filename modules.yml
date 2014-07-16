@@ -9,7 +9,8 @@ modules:
   mod_echo: {}
   mod_http_bind: {}
   mod_last: {}
-  mod_offline: {}
+  mod_offline:
+    access_max_user_messages: max_user_offline_messages
   mod_ping:
     send_pings: true
     ping_interval: 60
