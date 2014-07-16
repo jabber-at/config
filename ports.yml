@@ -1,14 +1,4 @@
 listen: 
-  - ip: "::"
-    port: 5349
-    module: ejabberd_stun
-    tls: true
-    certfile: 'CERT_LOCATION'
-    use_turn: true
-    turn_ip: "128.130.95.63"
-    turn_min_port: 49152
-    turn_max_port: 50000
-    access: local
   - ip: "127.0.0.1"
     port: 4560
     module: ejabberd_xmlrpc
@@ -42,6 +32,16 @@ listen:
     port: 5281
     module: ejabberd_http
     web_admin: true
+  - ip: "::"
+    port: 5349
+    module: ejabberd_stun
+    tls: true
+    certfile: 'CERT_LOCATION'
+    use_turn: true
+    turn_ip: "128.130.95.63"
+    turn_min_port: 49152
+    turn_max_port: 50000
+    access: local
   - ip: "127.0.0.1"
     port: 5401
     module: ejabberd_service
