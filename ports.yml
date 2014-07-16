@@ -1,5 +1,5 @@
 listen: 
-  - ip: "127.0.0.1"
+  - ip: "::"
     port: 4560
     module: ejabberd_xmlrpc
   - ip: "::"
