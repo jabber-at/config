@@ -1,5 +1,6 @@
 listen: 
-  - port: 5349
+  - ip: "::"
+    port: 5349
     module: ejabberd_stun
     tls: true
     certfile: 'CERT_LOCATION'
