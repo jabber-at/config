@@ -1,7 +1,11 @@
 listen: 
-  - ip: "::"
+  - ip: "127.0.0.1"
     port: 4560
     module: ejabberd_xmlrpc
+  - ip: "::"
+    port: 4561
+    module: ejabberd_xmlrpc
+    access: xmlrpc
   - ip: "::"
     port: 5061
     module: ejabberd_sip

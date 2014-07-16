@@ -56,3 +56,6 @@ acl:
       - "srecnig": "jabber.fsinf.at"
       - "nospam": "jabber.at"
       - "michaelpuermayr": "jabber.at"
+  xmlrpc:
+    user:
+      - "xmlrpc": "jabber.at"

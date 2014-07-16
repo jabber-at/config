@@ -27,6 +27,8 @@ access:
     blocked: deny
     anon_jabber_at: deny
     all: allow
+  xmlrpc:
+    xmlrpc: allow
   max_user_offline_messages:
     admin: 2000
     all: 100
