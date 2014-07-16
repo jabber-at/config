@@ -53,6 +53,8 @@ host_config:
           - "ra": "jabber.at"
           - "klausi": "jabber.at"
 
+  "anon.jabber.at":
+    domain_certfile: 'CERT_LOCATION_JABBER_AT'
 
   "jabber.fsinf.at":
     domain_certfile: 'CERT_LOCATION_JABBER_FSINF_AT'
