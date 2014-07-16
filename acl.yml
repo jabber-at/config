@@ -41,9 +41,6 @@ acl:
   anon_jabber_at:
     server:
       - "anon.jabber.at"
-    ip:
-      - "128.130.95.64/32"
-      - "2001:629:3200:95::1:64/128"
   local: 
     server: 
       - "jabber.at"
