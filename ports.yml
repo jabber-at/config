@@ -33,6 +33,11 @@ listen:
     module: ejabberd_http
     web_admin: true
   - ip: "::"
+    port: 5282
+    module: ejabberd_http
+    http_bind: true
+    access: anon_jabber_at
+  - ip: "::"
     port: 5349
     module: ejabberd_stun
     tls: true
