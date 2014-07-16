@@ -19,7 +19,7 @@ modules:
     count: 5
     interval: 60
   mod_pubsub:
-    access_createnode: everybody
+    access_createnode: local
     plugins:
       - "flat"
       - "hometree"
