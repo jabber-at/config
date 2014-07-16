@@ -38,6 +38,9 @@ acl:
   jabber_fsinf_at: 
     server: 
       - "jabber.fsinf.at"
+  anon_jabber_at:
+    server:
+      - "anon.jabber.at"
   local: 
     server: 
       - "jabber.at"
