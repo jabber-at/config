@@ -20,7 +20,7 @@ listen:
     module: ejabberd_c2s
     max_stanza_size: 65536
     shaper: c2s_shaper
-    access: everybody
+    access: local
     starttls_required: true
     protocol_options: 'TLS_OPTIONS'
     ciphers: 'TLS_CIPHERS'
