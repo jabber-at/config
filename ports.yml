@@ -7,6 +7,7 @@ listen:
     turn_ip: "128.130.95.63"
     turn_min_port: 49152
     turn_max_port: 50000
+    access: local
   - ip: "127.0.0.1"
     port: 4560
     module: ejabberd_xmlrpc
@@ -15,6 +16,7 @@ listen:
     module: ejabberd_sip
     tls: true
     certfile: 'CERT_LOCATION'
+    access: local
   - ip: "::"
     port: 5222
     module: ejabberd_c2s
