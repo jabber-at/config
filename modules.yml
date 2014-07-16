@@ -44,9 +44,8 @@ modules:
             accounts will be deleted after 12 months of inactivity.
             
             Also follow our twitter account at https://twitter.com/jabber_at or on facebook
-            at https://www.facebook.com/pages/jabberat/1453641724899241 - we
-            provide fast service updates there, especially if our service happens to
-            be unavailable.
+            at https://facebook.com/jabber.at - we provide fast service updates there,
+            especially if our service happens to be unavailable.
   mod_roster:
     versioning: true
     store_current_id: true
