@@ -4,7 +4,7 @@ access:
     admin: allow
   c2s_shaper:
     admin: none
-    everybody: normal
+    all: normal
   configure:
     blocked: deny
     admin: allow
@@ -25,16 +25,16 @@ access:
     local: allow
   max_user_offline_messages:
     admin: 2000
-    everybody: 100
+    all: 100
   max_user_sessions:
     admin: infinity
-    everybody: 3
+    all: 3
   muc_admin:
     blocked: deny
     admin: allow
     muc_admin: allow
   proxy_shaper:
     admin: none
-    everybody: proxy
+    local: proxy
   s2s_shaper:
-    everybody: fast
+    all: fast
