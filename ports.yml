@@ -25,7 +25,8 @@ listen:
   - ip: "::"
     port: 5269
     module: ejabberd_s2s_in
-  - port: 5280
+  - ip: "::"
+    port: 5280
     module: ejabberd_http
     request_handlers: 
       "/presence": mod_webpresence
