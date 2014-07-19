@@ -7,6 +7,7 @@ hosts:
   - "jabber.at"
   - "jabber.fsinf.at"
   - "fsinf.at"
+  - "anon.jabber.at"
 
 # only one registration per hour per IP:
 language: "en"
