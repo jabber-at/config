@@ -4,8 +4,6 @@ acl:
       - "klausi": "jabber.at"
       - "astra": "jabber.at"
       - "mati": "jabber.at"
-  local:
-    user_regexp: ""
   loopback:
     ip:
       - "127.0.0.0/8"
