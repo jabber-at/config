@@ -83,6 +83,7 @@ append_host_config:
         min_message_interval: 1
         min_presence_interval: 5
       mod_proxy65:
+        ip: "::"
         shaper: proxy_shaper
         max_connections: 10
         access: local
