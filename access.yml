@@ -22,7 +22,12 @@ access:
     jabber_fsinf_at: allow
   local:
     blocked: deny
+    anon_jabber_at: deny
     local: allow
+  authenticated:
+    blocked: deny
+    anon_jabber_at: deny
+    all: allow
   transport:
     blocked: deny
     anon_jabber_at: deny
