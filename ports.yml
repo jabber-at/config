@@ -53,35 +53,35 @@ listen:
     hosts: 
       "icq.jabber.at": 
         password: 'ICQ_JABBER_AT_PASSWORD'
-    access: transport
+    access: authenticated
   - ip: "127.0.0.1"
     port: 5403
     module: ejabberd_service
     hosts: 
       "aim.jabber.at": 
         password: 'AIM_JABBER_AT_PASSWORD'
-    access: transport
+    access: authenticated
   - ip: "127.0.0.1"
     port: 5404
     module: ejabberd_service
     hosts: 
       "gg.jabber.at": 
         password: 'GG_JABBER_AT_PASSWORD'
-    access: transport
+    access: authenticated
   - ip: "127.0.0.1"
     port: 5407
     module: ejabberd_service
     hosts: 
       "simple.jabber.at": 
         password: 'SIMPLE_JABBER_AT_PASSWORD'
-    access: transport
+    access: authenticated
   - ip: "127.0.0.1"
     port: 5409
     module: ejabberd_service
     hosts: 
       "yahoo.jabber.at": 
         password: 'YAHOO_JABBER_AT_PASSWORD'
-    access: transport
+    access: authenticated
 # port 7777  is configured by mod_proxy65
 
 outgoing_s2s_families: 
@@ -90,7 +90,7 @@ outgoing_s2s_families:
 
 outgoing_s2s_port: 5269
 outgoing_s2s_timeout: 10000
-s2s_access: s2s_access
+s2s_access: authenticated
 s2s_certfile: 'CERT_LOCATION'
 s2s_use_starttls: required
 s2s_protocol_options: 'TLS_OPTIONS'
