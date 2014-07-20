@@ -46,5 +46,9 @@ access:
   proxy_shaper:
     admin: none
     local: proxy
+  s2s_access:
+    blocked: deny
+    anon_jabber_at: deny
+    all: allow
   s2s_shaper:
     all: fast
