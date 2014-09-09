@@ -36,6 +36,12 @@ acl:
   jabber_fsinf_at: 
     server: 
       - "jabber.fsinf.at"
+  jabber.wien:
+    server:
+      - "jabber.wien"
+  jabber.zone:
+    server:
+      - "jabber.zone"
   anon_jabber_at:
     server:
       - "anon.jabber.at"
@@ -44,6 +50,8 @@ acl:
       - "jabber.at"
       - "jabber.fsinf.at"
       - "fsinf.at"
+      - "jabber.wien"
+      - "jabber.zone"
   muc_admin: 
     user: 
       - "viper": "jabber.at"
