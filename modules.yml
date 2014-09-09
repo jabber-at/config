@@ -148,3 +148,79 @@ append_host_config:
           mode: 644
           group: 33
         timezone: local
+  "jabber.wien":
+    modules:
+      mod_disco:
+        server_info:
+          - modules:
+              - mod_muc
+            name: "Chatroom logs"
+            urls:
+                - "https://muc-logs.jabber.wien"
+      mod_muc:
+        access: everybody
+        access_create: local
+        access_admin: muc_admin
+        moderated: false
+        allow_user_invites: true
+        max_user_conferences: 10
+        min_message_interval: 1
+        min_presence_interval: 5
+      mod_proxy65:
+        ip: "::"
+        shaper: proxy_shaper
+        max_connections: 10
+        access: local
+      mod_irc:
+        access: authenticated
+        default_encoding: "utf-8"
+      mod_muc_log:
+        access_log: everybody
+        timezone: local
+        outdir: "/var/www/muc-logs.jabber.wien"
+        file_permissions:
+          mode: 644
+          group: 33
+        spam_prevention: true
+      mod_webpresence:
+        pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
+        baseurl: "https://jabber.wien/presence/"
+        access: local
+  "jabber.zone":
+    modules:
+      mod_disco:
+        server_info:
+          - modules:
+              - mod_muc
+            name: "Chatroom logs"
+            urls:
+                - "https://muc-logs.jabber.zone"
+      mod_muc:
+        access: everybody
+        access_create: local
+        access_admin: muc_admin
+        moderated: false
+        allow_user_invites: true
+        max_user_conferences: 10
+        min_message_interval: 1
+        min_presence_interval: 5
+      mod_proxy65:
+        ip: "::"
+        shaper: proxy_shaper
+        max_connections: 10
+        access: local
+      mod_irc:
+        access: authenticated
+        default_encoding: "utf-8"
+      mod_muc_log:
+        access_log: everybody
+        timezone: local
+        outdir: "/var/www/muc-logs.jabber.zone"
+        file_permissions:
+          mode: 644
+          group: 33
+        spam_prevention: true
+      mod_webpresence:
+        pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
+        baseurl: "https://jabber.zone/presence/"
+        access: local
