@@ -9,6 +9,9 @@ modules:
   mod_echo: {}
   mod_http_bind:
     max_inactivity: 60
+  mod_irc:
+    access: authenticated
+    default_encoding: "utf-8"
   mod_last: {}
   mod_offline:
     access_max_user_messages: max_user_offline_messages
@@ -87,9 +90,6 @@ append_host_config:
         shaper: proxy_shaper
         max_connections: 10
         access: local
-      mod_irc:
-        access: authenticated
-        default_encoding: "utf-8"
       mod_muc_log:
         access_log: everybody
         timezone: local
@@ -116,7 +116,6 @@ append_host_config:
           - "conference.fsinf.at"
           - "conference.jabber.at"
           - "proxy.jabber.at"
-          - "irc.jabber.at"
           - "webpresence.jabber.at"
 
   "fsinf.at":
@@ -130,7 +129,6 @@ append_host_config:
               - "http://jabber.at/logs"
         extra_domains:
           - "conference.jabber.at"
-          - "irc.jabber.at"
           - "proxy.jabber.at"
           - "webpresence.jabber.at"
       mod_muc:
@@ -171,9 +169,6 @@ append_host_config:
         shaper: proxy_shaper
         max_connections: 10
         access: local
-      mod_irc:
-        access: authenticated
-        default_encoding: "utf-8"
       mod_muc_log:
         access_log: everybody
         timezone: local
@@ -209,9 +204,6 @@ append_host_config:
         shaper: proxy_shaper
         max_connections: 10
         access: local
-      mod_irc:
-        access: authenticated
-        default_encoding: "utf-8"
       mod_muc_log:
         access_log: everybody
         timezone: local
