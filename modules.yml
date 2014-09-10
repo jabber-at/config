@@ -79,15 +79,7 @@ append_host_config:
           - modules: [mod_muc]
             name: "Chatroom logs"
             urls: ["https://jabber.at/logs"]
-      mod_muc:
-        access: everybody
-        access_create: local
-        access_admin: muc_admin
-        moderated: false
-        allow_user_invites: true
-        max_user_conferences: 10
-        min_message_interval: 1
-        min_presence_interval: 5
+      mod_muc: 'MOD_MUC_CONFIG'
       mod_muc_log:
         access_log: everybody
         timezone: local
@@ -112,6 +104,11 @@ append_host_config:
           - "conference.fsinf.at"
           - "conference.jabber.at"
           - "webpresence.jabber.at"
+          - "aim.jabber.at"
+          - "gg.jabber.at"
+          - "icq.jabber.at"
+          - "simple.jabber.at"
+          - "yahoo.jabber.at"
 
   "fsinf.at":
     modules:
@@ -123,14 +120,12 @@ append_host_config:
         extra_domains:
           - "conference.jabber.at"
           - "webpresence.jabber.at"
-      mod_muc:
-        access: everybody
-        access_create: local
-        access_admin: muc_admin
-        moderated: false
-        allow_user_invites: true
-        min_message_interval: 1
-        min_presence_interval: 5
+          - "aim.jabber.at"
+          - "gg.jabber.at"
+          - "icq.jabber.at"
+          - "simple.jabber.at"
+          - "yahoo.jabber.at"
+      mod_muc: 'MOD_MUC_CONFIG'
       mod_muc_log:
         access_log: everybody
         timezone: local
@@ -146,15 +141,8 @@ append_host_config:
           - modules: [mod_muc]
             name: "Chatroom logs"
             urls: ["https://jabber.wien/logs"]
-      mod_muc:
-        access: everybody
-        access_create: local
-        access_admin: muc_admin
-        moderated: false
-        allow_user_invites: true
-        max_user_conferences: 10
-        min_message_interval: 1
-        min_presence_interval: 5
+        extra_domains: 'TRANSPORTS'
+      mod_muc: 'MOD_MUC_CONFIG'
       mod_muc_log:
         access_log: everybody
         timezone: local
@@ -174,15 +162,8 @@ append_host_config:
           - modules: [mod_muc]
             name: "Chatroom logs"
             urls: ["https://jabber.zone/logs"]
-      mod_muc:
-        access: everybody
-        access_create: local
-        access_admin: muc_admin
-        moderated: false
-        allow_user_invites: true
-        max_user_conferences: 10
-        min_message_interval: 1
-        min_presence_interval: 5
+        extra_domains: 'TRANSPORTS'
+      mod_muc: 'MOD_MUC_CONFIG'
       mod_muc_log:
         access_log: everybody
         timezone: local
