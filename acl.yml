@@ -16,6 +16,8 @@ acl:
       - "jabber.at"
       - "jabber.fsinf.at"
       - "fsinf.at"
+      - "jabber.wien"
+      - "jabber.zone"
       - "webmaster"
       - "root"
       - "postmaster"
