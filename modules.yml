@@ -13,6 +13,14 @@ modules:
     access: authenticated
     default_encoding: "utf-8"
   mod_last: {}
+  mod_muc_log:
+    access_log: everybody
+    timezone: local
+    outdir: "/var/www/jabber.at/sites/jabber.at/logs"
+    file_permissions:
+      mode: 644
+      group: 33
+    spam_prevention: true
   mod_offline:
     access_max_user_messages: max_user_offline_messages
   mod_ping:
@@ -30,6 +38,12 @@ modules:
       - "pep"
   mod_privacy: {}
   mod_private: {}
+  mod_proxy65:
+    ip: "::"
+    host: "proxy.jabber.at"
+    shaper: proxy_shaper
+    max_connections: 10
+    access: local
   mod_register:
     access: jabber_at
     captcha_protected: true
@@ -85,19 +99,6 @@ append_host_config:
         max_user_conferences: 10
         min_message_interval: 1
         min_presence_interval: 5
-      mod_proxy65:
-        ip: "::"
-        shaper: proxy_shaper
-        max_connections: 10
-        access: local
-      mod_muc_log:
-        access_log: everybody
-        timezone: local
-        outdir: "/var/www/jabber.at/sites/jabber.at/logs"
-        file_permissions:
-          mode: 644
-          group: 33
-        spam_prevention: true
       mod_webpresence:
         pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
         baseurl: "https://jabber.at/presence/"
@@ -139,13 +140,6 @@ append_host_config:
         allow_user_invites: true
         min_message_interval: 1
         min_presence_interval: 5
-      mod_muc_log:
-        access_log: everybody
-        outdir: "/var/www/jabber.at/sites/jabber.at/logs"
-        file_permissions:
-          mode: 644
-          group: 33
-        timezone: local
   "jabber.wien":
     modules:
       mod_disco:
@@ -164,19 +158,6 @@ append_host_config:
         max_user_conferences: 10
         min_message_interval: 1
         min_presence_interval: 5
-      mod_proxy65:
-        ip: "::"
-        shaper: proxy_shaper
-        max_connections: 10
-        access: local
-      mod_muc_log:
-        access_log: everybody
-        timezone: local
-        outdir: "/var/www/muc-logs.jabber.wien"
-        file_permissions:
-          mode: 644
-          group: 33
-        spam_prevention: true
       mod_webpresence:
         pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
         baseurl: "https://jabber.wien/presence/"
@@ -199,19 +180,6 @@ append_host_config:
         max_user_conferences: 10
         min_message_interval: 1
         min_presence_interval: 5
-      mod_proxy65:
-        ip: "::"
-        shaper: proxy_shaper
-        max_connections: 10
-        access: local
-      mod_muc_log:
-        access_log: everybody
-        timezone: local
-        outdir: "/var/www/muc-logs.jabber.zone"
-        file_permissions:
-          mode: 644
-          group: 33
-        spam_prevention: true
       mod_webpresence:
         pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
         baseurl: "https://jabber.zone/presence/"
