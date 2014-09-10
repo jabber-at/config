@@ -85,11 +85,9 @@ append_host_config:
     modules:
       mod_disco:
         server_info:
-          - modules:
-              - mod_muc
+          - modules: [mod_muc]
             name: "Chatroom logs"
-            urls:
-              - "https://jabber.at/logs"
+            urls: ["https://jabber.at/logs"]
       mod_muc:
         access: everybody
         access_create: local
@@ -108,11 +106,9 @@ append_host_config:
     modules:
       mod_disco:
         server_info:
-          - modules:
-              - mod_muc
+          - modules: [mod_muc]
             name: "Chatroom logs"
-            urls:
-              - "http://jabber.at/logs"
+            urls: ["http://jabber.at/logs"]
         extra_domains:
           - "conference.fsinf.at"
           - "conference.jabber.at"
@@ -123,11 +119,9 @@ append_host_config:
     modules:
       mod_disco:
         server_info:
-          - modules:
-              - mod_muc
+          - modules: [mod_muc]
             name: "Chatroom logs"
-            urls:
-              - "http://jabber.at/logs"
+            urls: ["http://jabber.at/logs"]
         extra_domains:
           - "conference.jabber.at"
           - "proxy.jabber.at"
@@ -144,11 +138,9 @@ append_host_config:
     modules:
       mod_disco:
         server_info:
-          - modules:
-              - mod_muc
+          - modules: [mod_muc]
             name: "Chatroom logs"
-            urls:
-                - "https://muc-logs.jabber.wien"
+            urls: ["https://muc-logs.jabber.wien"]
       mod_muc:
         access: everybody
         access_create: local
@@ -166,11 +158,9 @@ append_host_config:
     modules:
       mod_disco:
         server_info:
-          - modules:
-              - mod_muc
+          - modules: [mod_muc]
             name: "Chatroom logs"
-            urls:
-                - "https://muc-logs.jabber.zone"
+            urls: ["https://muc-logs.jabber.zone"]
       mod_muc:
         access: everybody
         access_create: local
