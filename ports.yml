@@ -29,7 +29,7 @@ listen:
     port: 5280
     module: ejabberd_http
     request_handlers: 
-      /"presence": mod_webpresence
+      "presence": mod_webpresence
     access: webchat
     http_bind: true
     captcha: true
