@@ -112,7 +112,6 @@ append_host_config:
         extra_domains:
           - "conference.fsinf.at"
           - "conference.jabber.at"
-          - "proxy.jabber.at"
           - "webpresence.jabber.at"
 
   "fsinf.at":
@@ -124,7 +123,6 @@ append_host_config:
             urls: ["http://jabber.at/logs"]
         extra_domains:
           - "conference.jabber.at"
-          - "proxy.jabber.at"
           - "webpresence.jabber.at"
       mod_muc:
         access: everybody
