@@ -140,7 +140,7 @@ append_host_config:
         server_info:
           - modules: [mod_muc]
             name: "Chatroom logs"
-            urls: ["https://muc-logs.jabber.wien"]
+            urls: ["https://jabber.wien/logs"]
       mod_muc:
         access: everybody
         access_create: local
@@ -160,7 +160,7 @@ append_host_config:
         server_info:
           - modules: [mod_muc]
             name: "Chatroom logs"
-            urls: ["https://muc-logs.jabber.zone"]
+            urls: ["https://jabber.zone/logs"]
       mod_muc:
         access: everybody
         access_create: local
