@@ -24,7 +24,7 @@ modules:
   mod_muc_log:
     access_log: everybody
     timezone: local
-    outdir: "/var/www/muc-logs"
+    outdir: "/var/www/jabber.at/sites/jabber.at/logs/"
     file_permissions:
       mode: 644
       group: 33
@@ -107,13 +107,11 @@ append_host_config:
           - modules: [mod_muc]
             name: "Chatroom logs"
             urls: ["http://jabber.at/logs"]
-        extra_domains:
-          - "webpresence.jabber.at"
-          - "aim.jabber.at"
-          - "gg.jabber.at"
-          - "icq.jabber.at"
-          - "simple.jabber.at"
-          - "yahoo.jabber.at"
+        extra_domains: 'TRANSPORTS'
+      mod_webpresence:
+        pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
+        baseurl: "https://jabber.fsinf.at/presence/"
+        access: local
 
   "fsinf.at":
     modules:
@@ -122,13 +120,11 @@ append_host_config:
           - modules: [mod_muc]
             name: "Chatroom logs"
             urls: ["http://jabber.at/logs"]
-        extra_domains:
-          - "webpresence.jabber.at"
-          - "aim.jabber.at"
-          - "gg.jabber.at"
-          - "icq.jabber.at"
-          - "simple.jabber.at"
-          - "yahoo.jabber.at"
+        extra_domains: 'TRANSPORTS'
+      mod_webpresence:
+        pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
+        baseurl: "https://fsinf.at/presence/"
+        access: local
   "jabber.wien":
     modules:
       mod_disco:
