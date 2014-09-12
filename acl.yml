@@ -38,10 +38,10 @@ acl:
   jabber_fsinf_at: 
     server: 
       - "jabber.fsinf.at"
-  jabber.wien:
+  jabber_wien:
     server:
       - "jabber.wien"
-  jabber.zone:
+  jabber_zone:
     server:
       - "jabber.zone"
   anon_jabber_at:
