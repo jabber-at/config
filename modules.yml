@@ -13,22 +13,6 @@ modules:
     access: authenticated
     default_encoding: "utf-8"
   mod_last: {}
-  mod_muc:
-    access: everybody
-    access_create: local
-    access_admin: muc_admin
-    moderated: false
-    allow_user_invites: true
-    min_message_interval: 1
-    min_presence_interval: 5
-  mod_muc_log:
-    access_log: everybody
-    timezone: local
-    outdir: "/var/www/jabber.at/sites/jabber.at/logs/"
-    file_permissions:
-      mode: 644
-      group: 33
-    spam_prevention: true
   mod_offline:
     access_max_user_messages: max_user_offline_messages
   mod_ping:
@@ -95,6 +79,22 @@ append_host_config:
           - modules: [mod_muc]
             name: "Chatroom logs"
             urls: ["https://jabber.at/logs"]
+      mod_muc:
+        access: everybody
+        access_create: local
+        access_admin: muc_admin
+        moderated: false
+        allow_user_invites: true
+        min_message_interval: 1
+        min_presence_interval: 5
+      mod_muc_log:
+        access_log: everybody
+        timezone: local
+        outdir: "/var/www/jabber.at/sites/jabber.at/logs/"
+        file_permissions:
+          mode: 644
+          group: 33
+    spam_prevention: true
       mod_webpresence:
         pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
         baseurl: "https://jabber.at/presence/"
@@ -102,12 +102,7 @@ append_host_config:
 
   "jabber.fsinf.at":
     modules:
-      mod_disco:
-        server_info:
-          - modules: [mod_muc]
-            name: "Chatroom logs"
-            urls: ["http://jabber.at/logs"]
-        extra_domains: 'TRANSPORTS'
+      mod_disco: {}
       mod_webpresence:
         pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
         baseurl: "https://jabber.fsinf.at/presence/"
@@ -121,6 +116,21 @@ append_host_config:
             name: "Chatroom logs"
             urls: ["http://jabber.at/logs"]
         extra_domains: 'TRANSPORTS'
+      mod_muc:
+        access: everybody
+        access_create: local
+        access_admin: muc_admin
+        moderated: false
+        allow_user_invites: true
+        min_message_interval: 1
+        min_presence_interval: 5
+      mod_muc_log:
+        access_log: everybody
+        timezone: local
+        outdir: "/var/www/jabber.at/sites/jabber.at/logs/"
+        file_permissions:
+          mode: 644
+          group: 33
       mod_webpresence:
         pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
         baseurl: "https://fsinf.at/presence/"
@@ -133,6 +143,21 @@ append_host_config:
             name: "Chatroom logs"
             urls: ["https://jabber.wien/logs"]
         extra_domains: 'TRANSPORTS'
+      mod_muc:
+        access: everybody
+        access_create: local
+        access_admin: muc_admin
+        moderated: false
+        allow_user_invites: true
+        min_message_interval: 1
+        min_presence_interval: 5
+      mod_muc_log:
+        access_log: everybody
+        timezone: local
+        outdir: "/var/www/jabber.at/sites/jabber.at/logs/"
+        file_permissions:
+          mode: 644
+          group: 33
       mod_webpresence:
         pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
         baseurl: "https://jabber.wien/presence/"
@@ -145,6 +170,21 @@ append_host_config:
             name: "Chatroom logs"
             urls: ["https://jabber.zone/logs"]
         extra_domains: 'TRANSPORTS'
+      mod_muc:
+        access: everybody
+        access_create: local
+        access_admin: muc_admin
+        moderated: false
+        allow_user_invites: true
+        min_message_interval: 1
+        min_presence_interval: 5
+      mod_muc_log:
+        access_log: everybody
+        timezone: local
+        outdir: "/var/www/jabber.at/sites/jabber.at/logs/"
+        file_permissions:
+          mode: 644
+          group: 33
       mod_webpresence:
         pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
         baseurl: "https://jabber.zone/presence/"
