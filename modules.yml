@@ -70,6 +70,10 @@ modules:
   # 3rd-party modules:
   mod_admin_extra: {}
   mod_muc_admin: {}
+  mod_webpresence:
+    pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
+    baseurl: "https://@HOST@/presence/"
+    access: local
 
 append_host_config:
   "jabber.at":
@@ -95,10 +99,6 @@ append_host_config:
           mode: 644
           group: 33
         spam_prevention: true
-      mod_webpresence:
-        pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
-        baseurl: "https://jabber.at/presence/"
-        access: local
 
   "jabber.fsinf.at":
     modules:
@@ -132,10 +132,7 @@ append_host_config:
           mode: 644
           group: 33
         spam_prevention: true
-      mod_webpresence:
-        pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
-        baseurl: "https://fsinf.at/presence/"
-        access: local
+
   "jabber.wien":
     modules:
       mod_disco:
@@ -160,10 +157,7 @@ append_host_config:
           mode: 644
           group: 33
         spam_prevention: true
-      mod_webpresence:
-        pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
-        baseurl: "https://jabber.wien/presence/"
-        access: local
+
   "jabber.zone":
     modules:
       mod_disco:
@@ -188,7 +182,3 @@ append_host_config:
           mode: 644
           group: 33
         spam_prevention: true
-      mod_webpresence:
-        pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
-        baseurl: "https://jabber.zone/presence/"
-        access: local
