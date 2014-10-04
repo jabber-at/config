@@ -1,6 +1,7 @@
-These are the configuration files used for our ejabberd installation at
-jabber.at. At present we still use version 2.1.13 and therefor still the
-erlang-based configuration files.
+These are the configuration files used for our ejabberd installation that hosts
+**jabber.at**, **jabber.wien** and **jabber.zone**. We use the Debian package
+for ejabberd available at apt.jabber.at, please see
+https://jabber.at/en/apt-repository for more information.
 
 There are two files that are not included in the repository:
 
