@@ -31,7 +31,7 @@ define_macro:
   'TLS_OPTIONS':
     - "no_sslv2"
     - "no_sslv3"
-  'TLS_CIPHERS': "DEFAULT:!EXPORT:!LOW:!RC4:!SSLv2:!DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!ECDHE-RSA-DES-CBC3-SHA"
+  'TLS_CIPHERS': "DEFAULT:!EXPORT:!LOW:!RC4:!SSLv2:!SSLv3:!DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!ECDHE-RSA-DES-CBC3-SHA"
   'TRANSPORTS':
     - "aim.jabber.at"
     - "gg.jabber.at"
