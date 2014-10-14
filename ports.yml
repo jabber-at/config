@@ -21,7 +21,8 @@ listen:
     starttls_required: true
     protocol_options: 'TLS_OPTIONS'
     ciphers: 'TLS_CIPHERS'
-    zlib: true
+    # zlib disabled for now, allows clients to bypass encryption
+    #zlib: true
   - ip: "::"
     port: 5269
     module: ejabberd_s2s_in
