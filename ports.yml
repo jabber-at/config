@@ -21,8 +21,9 @@ listen:
     starttls_required: true
     protocol_options: 'TLS_OPTIONS'
     ciphers: 'TLS_CIPHERS'
-    # zlib disabled for now, allows clients to bypass encryption
-    #zlib: true
+    # WARNING: Do not enable zlib on ejabberd-14.07 or earlier, see:
+    #   https://github.com/processone/ejabberd/commit/7bdc1151b
+    zlib: true
   - ip: "::"
     port: 5269
     module: ejabberd_s2s_in
