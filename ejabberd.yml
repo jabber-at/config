@@ -23,6 +23,10 @@ shaper:
   proxy: 3000
   fast: 50000
 
+# Disabling digest-md5 SASL mechanism to see what happens when we enable SCRAM
+# password hashing.
+disable_sasl_mechanisms: "digest-md5"
+
 # The default ciphers-setting is found here:
 #    https://github.com/processone/tls/blob/master/c_src/p1_tls_drv.c
 # We use the default and exclude a few additional ciphers classified as weak
@@ -37,7 +41,7 @@ define_macro:
     - "gg.jabber.at"
     - "icq.jabber.at"
     - "simple.jabber.at"
-    - "yahoo.jabber.at"    
+    - "yahoo.jabber.at"
 
 #####################
 ### Include files ###
