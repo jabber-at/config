@@ -78,9 +78,7 @@ host_config:
     domain_certfile: 'CERT_LOCATION_FSINF_AT'
   "jabber.zone":
     domain_certfile: 'CERT_LOCATION_JABBER_ZONE'
-    auth_password_format: scram
   "jabber.wien":
     domain_certfile: 'CERT_LOCATION_JABBER_WIEN'
-    auth_password_format: scram
   "xmpp.zone":
     domain_certfile: 'CERT_LOCATION_JABBER_WIEN'
