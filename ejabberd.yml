@@ -10,6 +10,7 @@ hosts:
   - "anon.jabber.at"
   - "jabber.wien"
   - "jabber.zone"
+  - "xmpp.zone"
 
 # only one registration per hour per IP:
 language: "en"
@@ -81,3 +82,5 @@ host_config:
   "jabber.wien":
     domain_certfile: 'CERT_LOCATION_JABBER_WIEN'
     auth_password_format: scram
+  "xmpp.zone":
+    domain_certfile: 'CERT_LOCATION_JABBER_WIEN'
