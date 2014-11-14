@@ -185,3 +185,28 @@ append_host_config:
           mode: 644
           group: 33
         spam_prevention: true
+
+  "xmpp.zone":
+    modules:
+      mod_disco:
+        server_info:
+          - modules: [mod_muc]
+            name: "Chatroom logs"
+            urls: ["https://xmpp.zone/logs"]
+        extra_domains: 'TRANSPORTS'
+      mod_muc:
+        access: everybody
+        access_create: local
+        access_admin: muc_admin
+        moderated: false
+        allow_user_invites: true
+        min_message_interval: 1
+        min_presence_interval: 5
+      mod_muc_log:
+        access_log: everybody
+        timezone: local
+        outdir: "/var/www/jabber.at/sites/jabber.at/logs/"
+        file_permissions:
+          mode: 644
+          group: 33
+        spam_prevention: true
