@@ -44,6 +44,9 @@ acl:
   jabber_zone:
     server:
       - "jabber.zone"
+  xmpp_zone:
+    server:
+      - "xmpp.zone"
   anon_jabber_at:
     server:
       - "anon.jabber.at"
@@ -54,6 +57,7 @@ acl:
       - "fsinf.at"
       - "jabber.wien"
       - "jabber.zone"
+      - "xmpp.zone"
   muc_admin: 
     user: 
       - "viper": "jabber.at"
