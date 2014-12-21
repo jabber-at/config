@@ -18,6 +18,7 @@ acl:
       - "fsinf.at"
       - "jabber.wien"
       - "jabber.zone"
+      - "xmpp.zone"
       - "webmaster"
       - "root"
       - "postmaster"
