@@ -51,3 +51,5 @@ access:
     local: proxy
   s2s_shaper:
     all: fast
+  register:
+    all: deny
