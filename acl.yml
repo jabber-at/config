@@ -63,8 +63,6 @@ acl:
     user: 
       - "viper": "jabber.at"
       - "tom": "fnord.at"
-      - "srecnig": "jabber.fsinf.at"
-      - "nospam": "jabber.at"
       - "michaelpuermayr": "jabber.at"
   xmlrpc:
     user:
