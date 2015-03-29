@@ -1,11 +1,14 @@
+# restricted xmlrcp access on local network: 
+include_config_file: "/etc/ejabberd/xmlrpc.cfg"
+
 listen: 
   - ip: "127.0.0.1"
     port: 4560
     module: ejabberd_xmlrpc
-  - ip: "fc00::63"
-    port: 4560
-    module: ejabberd_xmlrpc
-    access: xmlrpc
+#  - ip: "fc00::63"
+#    port: 4560
+#    module: ejabberd_xmlrpc
+#    access: xmlrpc
   - ip: "::"
     port: 5061
     module: ejabberd_sip
