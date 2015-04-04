@@ -6,7 +6,7 @@ listen:
     port: 4560
     module: ejabberd_xmlrpc
 #Defined in xmlrpc.cfg for tighter access controls
-#  - ip: "fc00::63"
+#  - ip: 'INTERNAL_IP'
 #    port: 4560
   - ip: "::"
     port: 5061
@@ -29,7 +29,7 @@ listen:
   - ip: "::"
     port: 5269
     module: ejabberd_s2s_in
-  - ip: "::"
+  - ip: 'INTERNAL_IP'
     port: 5280
     module: ejabberd_http
     request_handlers: 
