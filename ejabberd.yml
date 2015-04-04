@@ -21,8 +21,8 @@ captcha_cmd: "/usr/lib/ejabberd/priv/bin/captcha.sh"
 captcha_host: "https://jabber.at:443"
 loglevel: 2
 shaper: 
-  normal: 500
-  proxy: 3000
+  normal: 2000
+  proxy: 20000
   fast: 50000
 
 # Disabling digest-md5 SASL mechanism to see what happens when we enable SCRAM
