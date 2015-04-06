@@ -85,8 +85,7 @@ listen:
         password: 'YAHOO_JABBER_AT_PASSWORD'
     access: local
   # TLS-protected http services
-  - ip: "::1"
-    port: 5443
+  - port: 5443
     module: ejabberd_http
     request_handlers: 
       "presence": mod_webpresence
