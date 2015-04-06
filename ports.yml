@@ -2,9 +2,6 @@
 include_config_file: "/etc/ejabberd/xmlrpc.cfg"
 
 listen: 
-  - ip: "127.0.0.1"
-    port: 4560
-    module: ejabberd_xmlrpc
 #Defined in xmlrpc.cfg for tighter access controls
 #  - ip: 'INTERNAL_IP'
 #    port: 4560
