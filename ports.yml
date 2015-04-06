@@ -31,7 +31,7 @@ listen:
     module: ejabberd_http
     request_handlers: 
       "presence": mod_webpresence
-      "xmpp": ejabberd_http_ws
+      "ws": ejabberd_http_ws
     access: webchat
     http_bind: true
     captcha: true
