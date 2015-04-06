@@ -84,6 +84,19 @@ listen:
       "yahoo.jabber.at": 
         password: 'YAHOO_JABBER_AT_PASSWORD'
     access: local
+  # TLS-protected http services
+  - ip: "::"
+    port: 5443
+    module: ejabberd_http
+    request_handlers: 
+      "presence": mod_webpresence
+      "ws": ejabberd_http_ws
+    access: webchat
+    http_bind: true
+    tls: true
+    certfile: 'CERT_LOCATION'
+    ciphers: 'TLS_SECURE_CIPHERS'
+    protocol_options: 'TLS_OPTIONS'
 # port 7777  is configured by mod_proxy65
 
 outgoing_s2s_families: 
