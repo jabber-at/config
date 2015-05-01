@@ -56,6 +56,7 @@ modules:
 
   # 3rd-party modules:
   mod_admin_extra: {}
+  mod_mam: {}
   mod_muc_admin: {}
   mod_webpresence:
     pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
