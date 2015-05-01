@@ -70,13 +70,6 @@ listen:
       "gg.jabber.at": 
         password: 'GG_JABBER_AT_PASSWORD'
     access: local
-  - ip: "127.0.0.1"
-    port: 5409
-    module: ejabberd_service
-    hosts: 
-      "yahoo.jabber.at": 
-        password: 'YAHOO_JABBER_AT_PASSWORD'
-    access: local
   # TLS-protected http services
   - port: 5443
     module: ejabberd_http
