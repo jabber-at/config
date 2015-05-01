@@ -42,7 +42,7 @@ access:
     admin: 0
     anon_jabber_at: 0
     all: 100000
-  max_user_sessions:
+  max_user_mam_messages:
     admin: infinity
     anon_jabber_at: 1
     all: 3
