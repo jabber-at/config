@@ -52,7 +52,7 @@ modules:
   mod_time: {}
   mod_vcard: {}
   mod_vcard_xupdate: {}
-  #mod_version: {}  # Disabled for security concerns
+  mod_version: {}
 
   # 3rd-party modules:
   mod_admin_extra: {}
