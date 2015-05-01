@@ -71,13 +71,6 @@ listen:
         password: 'GG_JABBER_AT_PASSWORD'
     access: local
   - ip: "127.0.0.1"
-    port: 5407
-    module: ejabberd_service
-    hosts: 
-      "simple.jabber.at": 
-        password: 'SIMPLE_JABBER_AT_PASSWORD'
-    access: local
-  - ip: "127.0.0.1"
     port: 5409
     module: ejabberd_service
     hosts: 
