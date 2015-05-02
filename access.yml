@@ -38,11 +38,11 @@ access:
     admin: 2000
     anon_jabber_at: 0
     all: 100
-  access_max_user_messages:
+  max_user_mam_messages:
     admin: 0
     anon_jabber_at: 0
     all: 100000
-  max_user_mam_messages:
+  max_user_sessions:
     admin: infinity
     anon_jabber_at: 1
     all: 3
