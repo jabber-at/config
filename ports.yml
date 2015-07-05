@@ -82,6 +82,7 @@ listen:
     certfile: 'CERT_LOCATION'
     ciphers: 'TLS_SECURE_CIPHERS'
     protocol_options: 'TLS_OPTIONS'
+    websocket_timeout: 3600
 # port 7777  is configured by mod_proxy65
 
 outgoing_s2s_families: 
