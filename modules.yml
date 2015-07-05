@@ -59,7 +59,7 @@ modules:
   mod_version: {}
 
   # 3rd-party modules:
-  mod_mam: {}
+  mod_mam_mnesia: {}
   mod_webpresence:
     pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
     baseurl: "https://@HOST@/presence/"
