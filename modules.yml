@@ -11,6 +11,8 @@ modules:
     queue_presence: true
   mod_configure: {}
   mod_echo: {}
+  mod_fail2ban:
+    c2s_max_auth_failures: 5
   mod_http_bind:
     max_inactivity: 300
   mod_irc:
