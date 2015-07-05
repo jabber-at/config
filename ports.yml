@@ -25,15 +25,6 @@ listen:
   - ip: "::"
     port: 5269
     module: ejabberd_s2s_in
-  - ip: 'INTERNAL_IP'
-    port: 5280
-    module: ejabberd_http
-    request_handlers: 
-      "presence": mod_webpresence
-      "ws": ejabberd_http_ws
-    access: webchat
-    http_bind: true
-    captcha: true
   - ip: "127.0.0.1"
     port: 5281
     module: ejabberd_http
