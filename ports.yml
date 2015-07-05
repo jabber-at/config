@@ -70,7 +70,7 @@ listen:
     http_bind: true
     tls: true
     certfile: 'CERT_LOCATION'
-    ciphers: 'TLS_SECURE_CIPHERS'
+    ciphers: 'TLS_CIPHERS'
     protocol_options: 'TLS_OPTIONS'
     dhfile: 'DHPARAM_LOCATION'
     websocket_timeout: 3600
