@@ -20,8 +20,7 @@ listen:
     starttls_required: true
     protocol_options: 'TLS_OPTIONS'
     ciphers: 'TLS_CIPHERS'
-    # WARNING: Do not enable zlib on ejabberd-14.07 or earlier, see:
-    #   https://github.com/processone/ejabberd/commit/7bdc1151b
+    dhfile: 'DHPARAM_LOCATION'
     zlib: true
   - ip: "::"
     port: 5269
@@ -82,6 +81,7 @@ listen:
     certfile: 'CERT_LOCATION'
     ciphers: 'TLS_SECURE_CIPHERS'
     protocol_options: 'TLS_OPTIONS'
+    dhfile: 'DHPARAM_LOCATION'
     websocket_timeout: 3600
 # port 7777  is configured by mod_proxy65
 
@@ -96,3 +96,4 @@ s2s_certfile: 'CERT_LOCATION'
 s2s_use_starttls: required
 s2s_protocol_options: 'TLS_OPTIONS'
 s2s_ciphers: 'TLS_CIPHERS'
+s2s_dhfile: 'DHPARAM_LOCATION'
