@@ -82,7 +82,7 @@ outgoing_s2s_families:
 
 outgoing_s2s_port: 5269
 outgoing_s2s_timeout: 10000
-s2s_policy: authenticated
+s2s_access: authenticated
 s2s_certfile: 'CERT_LOCATION'
 s2s_use_starttls: required
 s2s_protocol_options: 'TLS_OPTIONS'
