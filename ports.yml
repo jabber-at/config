@@ -19,7 +19,7 @@ listen:
     access: local
     starttls_required: true
     protocol_options: 'TLS_OPTIONS'
-    ciphers: 'TLS_CIPHERS'
+    ciphers: 'TLS_CIPHERS_XMPP'
     dhfile: 'DHPARAM_LOCATION'
     zlib: true
   - ip: "::"
@@ -86,5 +86,5 @@ s2s_policy: authenticated
 s2s_certfile: 'CERT_LOCATION'
 s2s_use_starttls: required
 s2s_protocol_options: 'TLS_OPTIONS'
-s2s_ciphers: 'TLS_CIPHERS'
+s2s_ciphers: 'TLS_CIPHERS_XMPP'
 s2s_dhfile: 'DHPARAM_LOCATION'
