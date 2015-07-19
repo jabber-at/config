@@ -61,7 +61,8 @@ listen:
         password: 'GG_JABBER_AT_PASSWORD'
     access: local
   # TLS-protected http services
-  - port: 5443
+  - ip: "::"
+    port: 5443
     module: ejabberd_http
     request_handlers: 
       "presence": mod_webpresence
