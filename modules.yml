@@ -79,8 +79,6 @@ append_host_config:
         access: everybody
         access_create: local
         access_admin: muc_admin
-        moderated: false
-        allow_user_invites: true
         min_message_interval: 1
         min_presence_interval: 5
       mod_muc_log:
@@ -112,11 +110,8 @@ append_host_config:
         access: everybody
         access_create: local
         access_admin: muc_admin
-        allow_user_invites: true
         min_message_interval: 1
         min_presence_interval: 5
-        default_room_options:
-          moderated: false
       mod_muc_log:
         access_log: everybody
         timezone: local
@@ -138,8 +133,6 @@ append_host_config:
         access: everybody
         access_create: local
         access_admin: muc_admin
-        moderated: false
-        allow_user_invites: true
         min_message_interval: 1
         min_presence_interval: 5
       mod_muc_log:
@@ -163,8 +156,6 @@ append_host_config:
         access: everybody
         access_create: local
         access_admin: muc_admin
-        moderated: false
-        allow_user_invites: true
         min_message_interval: 1
         min_presence_interval: 5
       mod_muc_log:
@@ -188,8 +179,6 @@ append_host_config:
         access: everybody
         access_create: local
         access_admin: muc_admin
-        moderated: false
-        allow_user_invites: true
         min_message_interval: 1
         min_presence_interval: 5
       mod_muc_log:
