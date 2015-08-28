@@ -17,6 +17,7 @@ modules:
     max_inactivity: 300
   mod_http_upload:
     service_url: https://account.jabber.at/share/slot/
+    rm_on_unsubscribe: false
   mod_irc:
     access: authenticated
     default_encoding: "utf-8"
