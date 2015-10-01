@@ -42,8 +42,6 @@ define_macro:
     - "aim.jabber.at"
     - "gg.jabber.at"
     - "icq.jabber.at"
-    - "simple.jabber.at"
-    - "yahoo.jabber.at"
 
 #####################
 ### Include files ###
