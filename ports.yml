@@ -55,13 +55,6 @@ listen:
       "aim.jabber.at": 
         password: 'AIM_JABBER_AT_PASSWORD'
     access: local
-  - ip: "127.0.0.1"
-    port: 5404
-    module: ejabberd_service
-    hosts: 
-      "gg.jabber.at": 
-        password: 'GG_JABBER_AT_PASSWORD'
-    access: local
   # TLS-protected http services
   - ip: "::"
     port: 5443
