@@ -1,10 +1,27 @@
 # restricted xmlrcp access on local network: 
-include_config_file: "/etc/ejabberd/xmlrpc.cfg"
+# We shouldn't need this any more, see 
+#   https://github.com/processone/ejabberd/issues/759#issuecomment-146503154
+#include_config_file: "/etc/ejabberd/xmlrpc.cfg"
 
 listen: 
-#Defined in xmlrpc.cfg for tighter access controls
-#  - ip: 'INTERNAL_IP'
-#    port: 4560
+  # This still has to be tested, alternative is config file above
+  - port: 4560
+    ip: 'INTERNAL_IP'
+    module: ejabberd_xmlrpc
+    maxsessions: 10
+    timeout: 5000
+    access_commands:
+      xmlrpc:
+        commands:
+          - register
+          - set_last
+          - check_account
+          - check_password
+          - change_password
+          - send_message
+          - registered_users
+          - unregister
+        options: []
   - ip: "::"
     port: 5061
     module: ejabberd_sip
