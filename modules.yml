@@ -53,6 +53,7 @@ modules:
     access: local
   mod_register:
     access: register
+    access_from: none
   mod_roster:
     versioning: true
     store_current_id: true
