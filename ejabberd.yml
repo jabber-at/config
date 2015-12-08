@@ -20,6 +20,7 @@ registration_timeout: 3600
 captcha_cmd: "/usr/lib/ejabberd/priv/bin/captcha.sh"
 captcha_host: "https://jabber.at:443"
 loglevel: 2
+hide_sensitive_log_data: true
 shaper: 
   normal: 2000
   proxy: 20000
