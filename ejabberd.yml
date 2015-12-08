@@ -27,7 +27,9 @@ shaper:
 
 # Disabling digest-md5 SASL mechanism to see what happens when we enable SCRAM
 # password hashing.
-disable_sasl_mechanisms: "digest-md5"
+disable_sasl_mechanisms: 
+    - "digest-md5"
+    - "oauth2"
 commands_admin_access: xmlrpc
 
 # The default ciphers-setting is found here:
