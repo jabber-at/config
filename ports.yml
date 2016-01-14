@@ -31,7 +31,7 @@ listen:
   - ip: "::"
     port: 5222
     module: ejabberd_c2s
-    max_stanza_size: 65536
+    max_stanza_size: 131072
     shaper: c2s_shaper
     access: local
     starttls_required: true
