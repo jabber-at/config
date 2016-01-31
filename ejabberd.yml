@@ -30,7 +30,7 @@ shaper:
 # password hashing.
 disable_sasl_mechanisms: 
     - "digest-md5"
-    - "oauth2"
+    - "x-oauth2"
 commands_admin_access: xmlrpc
 
 # The default ciphers-setting is found here:
