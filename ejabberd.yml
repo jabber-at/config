@@ -47,7 +47,7 @@ define_macro:
     - "icq.jabber.at"
   'DEFAULT_ROOM_OPTIONS':
     moderated: false
-    members_by_default: fals
+    members_by_default: false
 
 #####################
 ### Include files ###
