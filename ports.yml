@@ -1,8 +1,3 @@
-# restricted xmlrcp access on local network: 
-# We shouldn't need this any more, see 
-#   https://github.com/processone/ejabberd/issues/759#issuecomment-146503154
-#include_config_file: "/etc/ejabberd/xmlrpc.cfg"
-
 listen: 
   # This still has to be tested, alternative is config file above
   - port: 4560
