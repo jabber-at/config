@@ -45,6 +45,9 @@ define_macro:
   'TRANSPORTS':
     - "aim.jabber.at"
     - "icq.jabber.at"
+  'DEFAULT_ROOM_OPTIONS':
+    moderated: false
+    members_by_default: fals
 
 #####################
 ### Include files ###

@@ -89,6 +89,7 @@ append_host_config:
         access_admin: muc_admin
         min_message_interval: 1
         min_presence_interval: 5
+        default_room_options: 'DEFAULT_ROOM_OPTIONS'
       mod_muc_log:
         access_log: everybody
         timezone: local
@@ -120,6 +121,7 @@ append_host_config:
         access_admin: muc_admin
         min_message_interval: 1
         min_presence_interval: 5
+        default_room_options: 'DEFAULT_ROOM_OPTIONS'
       mod_muc_log:
         access_log: everybody
         timezone: local
@@ -143,6 +145,7 @@ append_host_config:
         access_admin: muc_admin
         min_message_interval: 1
         min_presence_interval: 5
+        default_room_options: 'DEFAULT_ROOM_OPTIONS'
       mod_muc_log:
         access_log: everybody
         timezone: local
@@ -166,6 +169,7 @@ append_host_config:
         access_admin: muc_admin
         min_message_interval: 1
         min_presence_interval: 5
+        default_room_options: 'DEFAULT_ROOM_OPTIONS'
       mod_muc_log:
         access_log: everybody
         timezone: local
@@ -189,6 +193,7 @@ append_host_config:
         access_admin: muc_admin
         min_message_interval: 1
         min_presence_interval: 5
+        default_room_options: 'DEFAULT_ROOM_OPTIONS'
       mod_muc_log:
         access_log: everybody
         timezone: local
