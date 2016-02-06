@@ -17,7 +17,7 @@ language: "en"
 auth_method: internal
 auth_password_format: scram
 registration_timeout: 3600
-captcha_cmd: "/usr/lib/ejabberd/priv/bin/captcha.sh"
+captcha_cmd: "/usr/share/ejabberd/captcha.sh"
 captcha_host: "https://jabber.at:443"
 loglevel: 2
 hide_sensitive_log_data: true
