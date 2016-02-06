@@ -19,7 +19,7 @@ auth_password_format: scram
 registration_timeout: 3600
 captcha_cmd: "/usr/share/ejabberd/captcha.sh"
 captcha_host: "https://jabber.at:443"
-loglevel: 2
+loglevel: 4
 hide_sensitive_log_data: true
 shaper: 
   normal: 2000
