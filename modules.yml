@@ -50,7 +50,7 @@ modules:
   mod_proxy65:
     ip: "::"
     host: "proxy.jabber.at"
-    hostname: "128.130.95.63"
+    hostname: "128.130.95.40"
     auth_type: anonymous
     shaper: proxy_shaper
     max_connections: 10
