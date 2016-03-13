@@ -9,3 +9,4 @@ blocked.yml
 *.ucf-dist
 *.ucf-old
 /ejabberdctl.cfg
+/modules.d
