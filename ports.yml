@@ -82,13 +82,6 @@ listen:
       "telegram.jabber.at": 
         password: 'TELEGRAM_JABBER_AT_PASSWORD'
     access: local
-  - ip: "127.0.0.1"
-    port: 5405
-    module: ejabberd_service
-    hosts: 
-      "whatsapp.jabber.at": 
-        password: 'WHATSAPP_JABBER_AT_PASSWORD'
-    access: local
   # TLS-protected http services
   - ip: "::"
     port: 5443
