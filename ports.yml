@@ -61,27 +61,6 @@ listen:
       "icq.jabber.at": 
         password: 'ICQ_JABBER_AT_PASSWORD'
     access: local
-  - ip: "127.0.0.1"
-    port: 5402
-    module: ejabberd_service
-    hosts: 
-      "facebook.jabber.at": 
-        password: 'FACEBOOK_JABBER_AT_PASSWORD'
-    access: local
-  - ip: "127.0.0.1"
-    port: 5403
-    module: ejabberd_service
-    hosts: 
-      "aim.jabber.at": 
-        password: 'AIM_JABBER_AT_PASSWORD'
-    access: local
-  - ip: "127.0.0.1"
-    port: 5404
-    module: ejabberd_service
-    hosts: 
-      "telegram.jabber.at": 
-        password: 'TELEGRAM_JABBER_AT_PASSWORD'
-    access: local
   # TLS-protected http services
   - ip: "::"
     port: 5443
