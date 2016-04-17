@@ -17,6 +17,11 @@ listen:
           - registered_users
           - unregister
         options: []
+    tls: true
+    certfile: 'LOCAL_CERT_LOCATION'
+    ciphers: 'TLS_CIPHERS'
+    protocol_options: 'TLS_OPTIONS'
+    dhfile: 'DHPARAM_LOCATION'
   - ip: "::"
     port: 5061
     module: ejabberd_sip
