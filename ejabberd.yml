@@ -60,6 +60,10 @@ include_config_file:
   "/etc/ejabberd/ports.yml": []
   "/etc/ejabberd/modules.yml": []
 
+sql_type: 'SQL_TYPE'
+sql_server': 'SQL_SERVER'
+sql_port: 'SQL_PORT'
+
 ##########################
 ### Host configuration ###
 ##########################
@@ -71,6 +75,9 @@ host_config:
         user: 
           - "ra": "jabber.at"
           - "klausi": "jabber.at"
+    sql_database: 'SQL_DB_JABBER_AT'
+    sql_username: 'SQL_USER_JABBER_AT'
+    sql_password: 'SQL_PASS_JABBER_AT'
 
   "anon.jabber.at":
     domain_certfile: 'CERT_LOCATION_JABBER_AT'
@@ -79,11 +86,26 @@ host_config:
 
   "jabber.fsinf.at":
     domain_certfile: 'CERT_LOCATION_JABBER_FSINF_AT'
+    sql_database: 'SQL_DB_JABBER_FSINF_AT'
+    sql_username: 'SQL_USER_JABBER_FSINF_AT'
+    sql_password: 'SQL_PASS_JABBER_FSINF_AT'
   "fsinf.at": 
     domain_certfile: 'CERT_LOCATION_FSINF_AT'
+    sql_database: 'SQL_DB_FSINF_AT'
+    sql_username: 'SQL_USER_FSINF_AT'
+    sql_password: 'SQL_PASS_FSINF_AT'
   "jabber.zone":
     domain_certfile: 'CERT_LOCATION_JABBER_ZONE'
+    sql_database: 'SQL_DB_JABBER_ZONE'
+    sql_username: 'SQL_USER_JABBER_ZONE'
+    sql_password: 'SQL_PASS_JABBER_ZONE'
   "jabber.wien":
     domain_certfile: 'CERT_LOCATION_JABBER_WIEN'
+    sql_database: 'SQL_DB_JABBER_WIEN'
+    sql_username: 'SQL_USER_JABBER_WIEN'
+    sql_password: 'SQL_PASS_JABBER_WIEN'
   "xmpp.zone":
     domain_certfile: 'CERT_LOCATION_XMPP_ZONE'
+    sql_database: 'SQL_DB_XMPP_ZONE'
+    sql_username: 'SQL_USER_XMPP_ZONE'
+    sql_password: 'SQL_PASS_XMPP_ZONE'

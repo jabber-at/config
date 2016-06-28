@@ -23,10 +23,11 @@ modules:
     access: authenticated
     default_encoding: "utf-8"
   mod_last: {}
-#  mod_mam:
-#    default: always
-#    request_activates_archiving: true
-#    assume_mam_usage: on_request
+  mod_mam:
+    default: always
+    request_activates_archiving: true
+    assume_mam_usage: on_request
+    db_type: sql
   mod_muc_admin: {}
 # 2015-07-27: Disabled because of error messages and MUC-problems
 # mod_multicast:
