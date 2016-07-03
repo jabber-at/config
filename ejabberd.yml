@@ -22,8 +22,8 @@ captcha_host: "https://jabber.at:443"
 loglevel: 4
 hide_sensitive_log_data: true
 shaper: 
-  normal: 2000
-  proxy: 20000
+  normal: 20000
+  proxy: 50000
   fast: 50000
 
 # Disabling digest-md5 SASL mechanism to see what happens when we enable SCRAM
