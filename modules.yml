@@ -74,7 +74,7 @@ modules:
   # 3rd-party modules:
   mod_webpresence:
     pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
-    baseurl: "https://@HOST@/presence/"
+    baseurl: "https://http.@HOST@/presence/"
     access: local
 
 append_host_config:
@@ -104,10 +104,6 @@ append_host_config:
   "jabber.fsinf.at":
     modules:
       mod_disco: {}
-      mod_webpresence:
-        pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
-        baseurl: "https://jabber.fsinf.at/presence/"
-        access: local
 
   "fsinf.at":
     modules:
