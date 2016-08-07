@@ -28,7 +28,6 @@ modules:
     request_activates_archiving: true
     assume_mam_usage: on_request
     db_type: sql
-  mod_muc_admin: {}
 # 2015-07-27: Disabled because of error messages and MUC-problems
 # mod_multicast:
 #    access: local
@@ -85,6 +84,7 @@ append_host_config:
           - modules: [mod_muc]
             name: "Chatroom logs"
             urls: ["https://jabber.at/logs"]
+      mod_muc_admin: {}
       mod_muc:
         access: everybody
         access_create: local
@@ -113,6 +113,7 @@ append_host_config:
             name: "Chatroom logs"
             urls: ["http://jabber.at/logs"]
         extra_domains: 'TRANSPORTS'
+      mod_muc_admin: {}
       mod_muc:
         access: everybody
         access_create: local
@@ -137,6 +138,7 @@ append_host_config:
             name: "Chatroom logs"
             urls: ["https://jabber.wien/logs"]
         extra_domains: 'TRANSPORTS'
+      mod_muc_admin: {}
       mod_muc:
         access: everybody
         access_create: local
@@ -161,6 +163,7 @@ append_host_config:
             name: "Chatroom logs"
             urls: ["https://jabber.zone/logs"]
         extra_domains: 'TRANSPORTS'
+      mod_muc_admin: {}
       mod_muc:
         access: everybody
         access_create: local
@@ -185,6 +188,7 @@ append_host_config:
             name: "Chatroom logs"
             urls: ["https://xmpp.zone/logs"]
         extra_domains: 'TRANSPORTS'
+      mod_muc_admin: {}
       mod_muc:
         access: everybody
         access_create: local
