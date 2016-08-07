@@ -85,13 +85,7 @@ append_host_config:
             name: "Chatroom logs"
             urls: ["https://jabber.at/logs"]
       mod_muc_admin: {}
-      mod_muc:
-        access: everybody
-        access_create: local
-        access_admin: muc_admin
-        min_message_interval: 1
-        min_presence_interval: 5
-        default_room_options: 'DEFAULT_ROOM_OPTIONS'
+      mod_muc: 'MOD_MUC_OPTIONS'
       mod_muc_log: 'MOD_MUC_LOG_OPTIONS'
 
   "jabber.fsinf.at":
@@ -107,13 +101,7 @@ append_host_config:
             urls: ["http://jabber.at/logs"]
         extra_domains: 'TRANSPORTS'
       mod_muc_admin: {}
-      mod_muc:
-        access: everybody
-        access_create: local
-        access_admin: muc_admin
-        min_message_interval: 1
-        min_presence_interval: 5
-        default_room_options: 'DEFAULT_ROOM_OPTIONS'
+      mod_muc: 'MOD_MUC_OPTIONS'
       mod_muc_log: 'MOD_MUC_LOG_OPTIONS'
 
   "jabber.wien":
@@ -125,13 +113,7 @@ append_host_config:
             urls: ["https://jabber.wien/logs"]
         extra_domains: 'TRANSPORTS'
       mod_muc_admin: {}
-      mod_muc:
-        access: everybody
-        access_create: local
-        access_admin: muc_admin
-        min_message_interval: 1
-        min_presence_interval: 5
-        default_room_options: 'DEFAULT_ROOM_OPTIONS'
+      mod_muc: 'MOD_MUC_OPTIONS'
       mod_muc_log: 'MOD_MUC_LOG_OPTIONS'
 
   "jabber.zone":
@@ -143,13 +125,7 @@ append_host_config:
             urls: ["https://jabber.zone/logs"]
         extra_domains: 'TRANSPORTS'
       mod_muc_admin: {}
-      mod_muc:
-        access: everybody
-        access_create: local
-        access_admin: muc_admin
-        min_message_interval: 1
-        min_presence_interval: 5
-        default_room_options: 'DEFAULT_ROOM_OPTIONS'
+      mod_muc: 'MOD_MUC_OPTIONS'
       mod_muc_log: 'MOD_MUC_LOG_OPTIONS'
 
   "xmpp.zone":
@@ -161,11 +137,5 @@ append_host_config:
             urls: ["https://xmpp.zone/logs"]
         extra_domains: 'TRANSPORTS'
       mod_muc_admin: {}
-      mod_muc:
-        access: everybody
-        access_create: local
-        access_admin: muc_admin
-        min_message_interval: 1
-        min_presence_interval: 5
-        default_room_options: 'DEFAULT_ROOM_OPTIONS'
+      mod_muc: 'MOD_MUC_OPTIONS'
       mod_muc_log: 'MOD_MUC_LOG_OPTIONS'

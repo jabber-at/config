@@ -44,9 +44,15 @@ define_macro:
   'TLS_CIPHERS': "ECDH:DH:!CAMELLIA128:!3DES:!MD5:!RC4:!aNULL:!NULL:!EXPORT:!LOW:!MEDIUM"
   'TRANSPORTS':
     - "icq.jabber.at"
-  'DEFAULT_ROOM_OPTIONS':
-    moderated: false
-    members_by_default: false
+  'MOD_MUC_OPTIONS':
+        access: everybody
+        access_create: local
+        access_admin: muc_admin
+        min_message_interval: 1
+        min_presence_interval: 5
+        default_room_options:
+          moderated: false
+          members_by_default: false
   'MOD_MUC_LOG_OPTIONS':
     access_log: everybody
     timezone: local
