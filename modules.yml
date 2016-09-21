@@ -16,7 +16,7 @@ modules:
   mod_http_bind:
     max_inactivity: 300
   mod_http_upload:
-    service_url: "https://account.jabber.at/share/slot/"
+    service_url: 'HTTP_UPLOAD_URL'
     max_size: 15728640 # 15 MiB
     rm_on_unregister: false
   mod_irc:
