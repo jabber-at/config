@@ -19,12 +19,16 @@ auth_password_format: scram
 registration_timeout: 3600
 captcha_cmd: "/usr/share/ejabberd/captcha.sh"
 captcha_host: "https://jabber.at:443"
-loglevel: 4
-hide_sensitive_log_data: true
 shaper: 
   normal: 20000
   proxy: 50000
   fast: 50000
+
+# logging
+loglevel: 4
+log_rotate_date: ""
+log_rotate_size: 0
+hide_sensitive_log_data: true
 
 # Disabling digest-md5 SASL mechanism to see what happens when we enable SCRAM
 # password hashing.
