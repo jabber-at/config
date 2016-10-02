@@ -57,6 +57,11 @@ listen:
     request_handlers:
       "/oauth": ejabberd_oauth
       "/api": mod_http_api
+    tls: true
+    certfile: 'LOCAL_CERT_LOCATION'
+    ciphers: 'TLS_CIPHERS'
+    protocol_options: 'TLS_OPTIONS'
+    dhfile: 'DHPARAM_LOCATION'
   - ip: "::"
     port: 5349
     module: ejabberd_stun
