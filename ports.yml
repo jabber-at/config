@@ -8,17 +8,17 @@ listen:
     access_commands:
       xmlrpc:
         commands:
-          - register
-          - set_last
+          - change_password
           - check_account
           - check_password
-          - change_password
-          - send_message
+          - get_last
+          - register
           - registered_users
-          - unregister
+          - send_message
+          - set_last
           - stats
           - stats_host
-          - get_last
+          - unregister
         options: []
     tls: true
     certfile: 'LOCAL_CERT_LOCATION'
