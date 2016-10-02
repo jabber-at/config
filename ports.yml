@@ -51,6 +51,12 @@ listen:
     port: 5281
     module: ejabberd_http
     web_admin: true
+  - ip: 'INTERNAL_IP'
+    port: 5282
+    module: ejabberd_http
+    request_handlers:
+      "/oauth": ejabberd_oauth
+      "/api": mod_http_api
   - ip: "::"
     port: 5349
     module: ejabberd_stun
