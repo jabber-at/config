@@ -67,3 +67,6 @@ acl:
   xmlrpc:
     user:
       - "xmlrpc": "jabber.at"
+  api:
+    user:
+      - "api": "jabber.at"
