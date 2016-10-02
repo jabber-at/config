@@ -16,6 +16,9 @@ listen:
           - send_message
           - registered_users
           - unregister
+          - stats
+          - stats_host
+          - get_last
         options: []
     tls: true
     certfile: 'LOCAL_CERT_LOCATION'
