@@ -35,7 +35,6 @@ hide_sensitive_log_data: true
 disable_sasl_mechanisms: 
     - "digest-md5"
     - "x-oauth2"
-commands_admin_access: xmlrpc
 
 # The default ciphers-setting is found here:
 #    https://github.com/processone/tls/blob/master/c_src/p1_tls_drv.c
@@ -67,6 +66,18 @@ define_macro:
       mode: 644
       group: 33
     spam_prevention: true
+  'API_COMMANDS':
+    - change_password
+    - check_account
+    - check_password
+    - get_last
+    - register
+    - registered_users
+    - send_message
+    - set_last
+    - stats
+    - stats_host
+    - unregister
 
 #####################
 ### Include files ###
@@ -78,6 +89,8 @@ include_config_file:
 #  "/etc/ejabberd/blocked.yml": []
   "/etc/ejabberd/ports.yml": []
   "/etc/ejabberd/modules.yml": []
+commands_admin_access: xmlrpc
+commands: 'API_COMMANDS'
 
 ##########################
 ### Host configuration ###
