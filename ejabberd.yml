@@ -89,7 +89,7 @@ include_config_file:
 #  "/etc/ejabberd/blocked.yml": []
   "/etc/ejabberd/ports.yml": []
   "/etc/ejabberd/modules.yml": []
-commands_admin_access: xmlrpc
+commands_admin_access: api
 commands: 'API_COMMANDS'
 
 ##########################
