@@ -7,6 +7,7 @@ modules:
   mod_caps: {}
   mod_carboncopy: {}
   mod_client_state:
+    queue_chat_states: true
     queue_presence: true
   mod_configure: {}
   mod_echo: {}
@@ -25,7 +26,7 @@ modules:
   mod_mam:
     default: always
     request_activates_archiving: true
-    assume_mam_usage: on_request
+    assume_mam_usage: true
     db_type: sql
 # 2015-07-27: Disabled because of error messages and MUC-problems
 # mod_multicast:
