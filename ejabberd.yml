@@ -94,7 +94,8 @@ include_config_file:
 ### API configuration ###
 #########################
 commands_admin_access: api
-commands: 'API_COMMANDS'
+commands: 
+    - add_commands: 'API_COMMANDS'
 
 ##########################
 ### Host configuration ###
