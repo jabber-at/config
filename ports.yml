@@ -1,5 +1,4 @@
 listen: 
-  # This still has to be tested, alternative is config file above
   - port: 4560
     ip: 'INTERNAL_IP'
     module: ejabberd_xmlrpc
@@ -44,9 +43,9 @@ listen:
     # see https://www.ejabberd.im/faq/tcp
     resend_on_timeout: if_offline
     zlib: true
-  - ip: "::"
-    port: 5269
-    module: ejabberd_s2s_in
+#  - ip: "::"
+#  port: 5269
+#  module: ejabberd_s2s_in
   - ip: "127.0.0.1"
     port: 5281
     module: ejabberd_http
