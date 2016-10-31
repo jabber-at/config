@@ -67,7 +67,7 @@ listen:
     tls: true
     certfile: 'CERT_LOCATION'
     use_turn: true
-    turn_ip: "128.130.95.40"
+    turn_ip: "128.130.95.43"
     turn_min_port: 49152
     turn_max_port: 50000
     access: local
