@@ -12,6 +12,7 @@ acl:
       - "gtalk2voip.com"
       - "talkonaut.com"
       - "syriatalk.org"
+      - "exploit.im"
     user: 
       - "jabber.at"
       - "jabber.fsinf.at"
@@ -27,6 +28,9 @@ acl:
       - "fsinf"
       - "ejabberd"
       - "admin"
+      - "jsman"
+      - "jsmann"
+      - "js"
     user_regexp: 
       - "^.*owner.*$"
       - "^.*admin.*$"
