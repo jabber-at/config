@@ -96,8 +96,8 @@ listen:
     websocket_timeout: 3600
 # port 7777  is configured by mod_proxy65
 
+# ipv6 is disabled for now
 outgoing_s2s_families: 
-  - ipv6
   - ipv4
 
 outgoing_s2s_port: 5269
