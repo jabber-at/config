@@ -46,6 +46,7 @@ listen:
   - ip: "::"
     port: 5269
     module: ejabberd_s2s_in
+    access: s2s_access
   - ip: "127.0.0.1"
     port: 5281
     module: ejabberd_http

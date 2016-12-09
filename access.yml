@@ -5,6 +5,9 @@ access:
   c2s_shaper:
     admin: none
     all: normal
+  s2s_access:
+    banned_servers: deny
+    all: allow
   configure:
     blocked: deny
     admin: allow

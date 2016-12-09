@@ -34,6 +34,12 @@ acl:
     user_regexp: 
       - "^.*owner.*$"
       - "^.*admin.*$"
+  banned_servers:
+    server:
+      - "gtalk2voip.com"
+      - "talkonaut.com"
+      - "syriatalk.org"
+      - "exploit.im"
   fsinf_at: 
     server: 
       - "fsinf.at"
@@ -63,7 +69,6 @@ acl:
   muc_admin: 
     user: 
       - "viper": "jabber.at"
-      - "tom": "fnord.at"
       - "michaelpuermayr": "jabber.at"
   xmlrpc:
     user:
