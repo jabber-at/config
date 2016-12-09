@@ -7,7 +7,6 @@ hosts:
   - "jabber.at"
   - "jabber.fsinf.at"
   - "fsinf.at"
-  - "anon.jabber.at"
   - "jabber.wien"
   - "jabber.zone"
   - "xmpp.zone"
@@ -115,11 +114,6 @@ host_config:
     sql_database: 'SQL_DB_JABBER_AT'
     sql_username: 'SQL_USER_JABBER_AT'
     sql_password: 'SQL_PASS_JABBER_AT'
-
-  "anon.jabber.at":
-    domain_certfile: 'CERT_LOCATION_JABBER_AT'
-    auth_method: [anonymous]
-    anonymous_protocol: both
 
   "jabber.fsinf.at":
     domain_certfile: 'CERT_LOCATION_JABBER_FSINF_AT'

@@ -22,31 +22,25 @@ access:
     jabber_fsinf_at: allow
   local:
     blocked: deny
-    anon_jabber_at: deny
     local: allow
   authenticated:
     blocked: deny
-    anon_jabber_at: deny
     all: allow
   webchat:
     blocked: deny
     local: allow
-    anon_jabber_at: allow
   xmlrpc:
     xmlrpc: allow
   api:
     api: allow
   max_user_offline_messages:
     admin: 2000
-    anon_jabber_at: 0
     all: 100
   max_user_mam_messages:
     admin: 0
-    anon_jabber_at: 0
     all: 100000
   max_user_sessions:
     admin: infinity
-    anon_jabber_at: 1
     all: 3
   muc_admin:
     blocked: deny
