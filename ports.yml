@@ -43,9 +43,9 @@ listen:
     # see https://www.ejabberd.im/faq/tcp
     resend_on_timeout: if_offline
     zlib: true
-#  - ip: "::"
-#  port: 5269
-#  module: ejabberd_s2s_in
+  - ip: "::"
+    port: 5269
+    module: ejabberd_s2s_in
   - ip: "127.0.0.1"
     port: 5281
     module: ejabberd_http
@@ -67,7 +67,7 @@ listen:
     tls: true
     certfile: 'CERT_LOCATION'
     use_turn: true
-    turn_ip: "128.130.95.43"
+    turn_ip: "128.130.95.44"
     turn_min_port: 49152
     turn_max_port: 50000
     access: local
@@ -96,8 +96,8 @@ listen:
     websocket_timeout: 3600
 # port 7777  is configured by mod_proxy65
 
+# ipv6 is disabled for now
 outgoing_s2s_families: 
-  - ipv6
   - ipv4
 
 outgoing_s2s_port: 5269
