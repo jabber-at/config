@@ -70,6 +70,7 @@ define_macro:
     - check_account
     - check_password
     - get_last
+    - kick_session
     - register
     - registered_users
     - send_message
@@ -78,6 +79,7 @@ define_macro:
     - stats_host
     - status
     - unregister
+    - user_sessions_info
 
 #####################
 ### Include files ###
