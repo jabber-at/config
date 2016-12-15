@@ -7,6 +7,9 @@ acl:
   loopback:
     ip:
       - "127.0.0.0/8"
+  a_record:
+    ip:
+      - "138.201.246.149"
   blocked: 
     server: 
       - "gtalk2voip.com"

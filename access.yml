@@ -56,3 +56,5 @@ access:
     all: fast
   register:
     all: deny
+  fail2ban:
+    a_record: allow

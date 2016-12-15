@@ -13,6 +13,7 @@ modules:
   mod_echo: {}
   mod_fail2ban:
     c2s_max_auth_failures: 5
+    access: fail2ban
   mod_http_bind:
     max_inactivity: 300
   mod_http_upload:
