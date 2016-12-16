@@ -6,18 +6,7 @@ listen:
     timeout: 5000
     access_commands:
       xmlrpc:
-        commands:
-          - change_password
-          - check_account
-          - check_password
-          - get_last
-          - register
-          - registered_users
-          - send_message
-          - set_last
-          - stats
-          - stats_host
-          - unregister
+        commands: 'API_COMMANDS'
         options: []
     tls: true
     certfile: 'LOCAL_CERT_LOCATION'
