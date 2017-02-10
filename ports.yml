@@ -1,18 +1,4 @@
 listen: 
-  - port: 4560
-    ip: 'INTERNAL_IP'
-    module: ejabberd_xmlrpc
-    maxsessions: 10
-    timeout: 5000
-    access_commands:
-      xmlrpc:
-        commands: 'API_COMMANDS'
-        options: []
-    tls: true
-    certfile: 'LOCAL_CERT_LOCATION'
-    ciphers: 'TLS_CIPHERS'
-    protocol_options: 'TLS_OPTIONS'
-    dhfile: 'DHPARAM_LOCATION'
   - ip: "::"
     port: 5061
     module: ejabberd_sip
