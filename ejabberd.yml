@@ -69,10 +69,17 @@ define_macro:
     - change_password
     - check_account
     - check_password
+    - connected-users-number
+    - connected_users_info
     - get_last
+    - incoming-s2s-number
     - kick_session
+    - muc-online-rooms
+    - num_active_users
+    - outgoing-s2s-number
     - register
     - registered_users
+    - registered_vhosts
     - send_message
     - set_last
     - stats
