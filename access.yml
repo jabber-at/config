@@ -44,7 +44,7 @@ access:
     all: 100000
   max_user_sessions:
     admin: infinity
-    all: 3
+    all: 5
   muc_admin:
     blocked: deny
     admin: allow
