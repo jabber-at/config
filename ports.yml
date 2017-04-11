@@ -8,7 +8,7 @@ listen:
   - ip: "::"
     port: 5222
     module: ejabberd_c2s
-    max_stanza_size: 131072
+    max_stanza_size: 1048576
     shaper: c2s_shaper
     access: local
     starttls_required: true
@@ -23,6 +23,7 @@ listen:
     module: ejabberd_s2s_in
     access: s2s_access
     shaper: s2s_shaper
+    max_stanza_size: 5242880
   - ip: "127.0.0.1"
     port: 5281
     module: ejabberd_http
