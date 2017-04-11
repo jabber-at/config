@@ -66,6 +66,7 @@ define_macro:
       group: 33
     spam_prevention: true
   'API_COMMANDS':
+    - ban_account
     - change_password
     - check_account
     - check_password
