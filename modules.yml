@@ -4,6 +4,7 @@ modules:
   mod_announce:
     access: admin
   mod_blocking: {}
+  mod_block_strangers: {}
   mod_caps: {}
   mod_carboncopy: {}
   mod_client_state:
@@ -65,8 +66,10 @@ modules:
   mod_roster:
     versioning: true
     store_current_id: true
+  mod_s2s_dialback: {}
   mod_sic: {}
   mod_sip: {}
+  mod_stream_mgmt: {}
   mod_stats: {}
   mod_time: {}
   mod_vcard: {}
