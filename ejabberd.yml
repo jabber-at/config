@@ -24,7 +24,7 @@ shaper:
   fast: 50000
 
 # logging
-loglevel: 4
+loglevel: 3
 log_rotate_date: ""
 log_rotate_size: 0
 hide_sensitive_log_data: true
