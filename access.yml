@@ -7,6 +7,7 @@ access:
     all: normal
   s2s_access:
     blocked_servers: deny
+    blocked: deny
     all: allow
   configure:
     blocked: deny
