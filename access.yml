@@ -6,7 +6,7 @@ access:
     admin: none
     all: normal
   s2s_access:
-    banned_servers: deny
+    blocked_servers: deny
     all: allow
   configure:
     blocked: deny

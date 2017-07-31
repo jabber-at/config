@@ -37,7 +37,7 @@ acl:
     user_regexp: 
       - "^.*owner.*$"
       - "^.*admin.*$"
-  banned_servers:
+  blocked_servers:
     server:
       - "gtalk2voip.com"
       - "talkonaut.com"
