@@ -19,20 +19,6 @@ listen:
     resend_on_timeout: if_offline
     zlib: true
   - ip: "::"
-    port: 5223
-    module: ejabberd_c2s
-    max_stanza_size: 1048576
-    shaper: c2s_shaper
-    access: local
-    tls: true
-    protocol_options: 'TLS_OPTIONS'
-    ciphers: 'TLS_CIPHERS'
-    dhfile: 'DHPARAM_LOCATION'
-    certfile: 'CERT_LOCATION_JABBER_AT'
-    # see https://www.ejabberd.im/faq/tcp
-    resend_on_timeout: if_offline
-    zlib: true
-  - ip: "::"
     port: 5269
     module: ejabberd_s2s_in
     access: s2s_access
