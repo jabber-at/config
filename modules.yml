@@ -76,12 +76,6 @@ modules:
   mod_vcard_xupdate: {}
   mod_version: {}
 
-  # 3rd-party modules:
-  #mod_webpresence:
-  #  pixmaps_path: "/usr/share/ejabberd-mod-webpresence/pixmaps/"
-  #  baseurl: "https://http.@HOST@/presence/"
-  #  access: local
-
 append_host_config:
   "jabber.at":
     modules:

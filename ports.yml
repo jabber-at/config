@@ -76,7 +76,6 @@ listen:
     port: 5443
     module: ejabberd_http
     request_handlers: 
-      "presence": mod_webpresence
       "ws": ejabberd_http_ws
     access: webchat
     http_bind: true
