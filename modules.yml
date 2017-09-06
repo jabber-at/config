@@ -99,7 +99,6 @@ append_host_config:
           - modules: [mod_muc]
             name: "Chatroom logs"
             urls: ["http://jabber.at/logs"]
-        extra_domains: 'TRANSPORTS'
       mod_muc: 'MOD_MUC_OPTIONS'
       mod_muc_admin: {}
       mod_muc_log: 'MOD_MUC_LOG_OPTIONS'
@@ -111,7 +110,6 @@ append_host_config:
           - modules: [mod_muc]
             name: "Chatroom logs"
             urls: ["https://jabber.wien/logs"]
-        extra_domains: 'TRANSPORTS'
       mod_muc_admin: {}
       mod_muc: 'MOD_MUC_OPTIONS'
       mod_muc_log: 'MOD_MUC_LOG_OPTIONS'
@@ -123,7 +121,6 @@ append_host_config:
           - modules: [mod_muc]
             name: "Chatroom logs"
             urls: ["https://jabber.zone/logs"]
-        extra_domains: 'TRANSPORTS'
       mod_muc: 'MOD_MUC_OPTIONS'
       mod_muc_admin: {}
       mod_muc_log: 'MOD_MUC_LOG_OPTIONS'
@@ -135,7 +132,6 @@ append_host_config:
           - modules: [mod_muc]
             name: "Chatroom logs"
             urls: ["https://xmpp.zone/logs"]
-        extra_domains: 'TRANSPORTS'
       mod_muc: 'MOD_MUC_OPTIONS'
       mod_muc_admin: {}
       mod_muc_log: 'MOD_MUC_LOG_OPTIONS'
