@@ -16,7 +16,6 @@ listen:
     ciphers: 'TLS_CIPHERS'
     dhfile: 'DHPARAM_LOCATION'
     # see https://www.ejabberd.im/faq/tcp
-    resend_on_timeout: if_offline
     zlib: true
   - ip: "::"
     port: 5223
@@ -30,7 +29,6 @@ listen:
     dhfile: 'DHPARAM_LOCATION'
     certfile: 'CERT_LOCATION_JABBER_AT'
     # see https://www.ejabberd.im/faq/tcp
-    resend_on_timeout: if_offline
     zlib: true
   - ip: "::"
     port: 5269

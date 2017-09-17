@@ -50,6 +50,9 @@ modules:
       - "flat"
       - "hometree"
       - "pep"
+# mod_push requires ejabbberd 17.08 or later
+#  mod_push: {}
+#  mod_push_keepalive: {}
   mod_privacy: {}
   mod_private: {}
   mod_proxy65:
@@ -69,7 +72,8 @@ modules:
   mod_s2s_dialback: {}
   mod_sic: {}
   mod_sip: {}
-  mod_stream_mgmt: {}
+  mod_stream_mgmt:
+      resend_on_timeout: if_offline
   mod_stats: {}
   mod_time: {}
   mod_vcard: {}
