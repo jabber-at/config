@@ -45,7 +45,6 @@ modules:
     interval: 60
   mod_pubsub:
     access_createnode: local
-    db_type: sql
     plugins:
       - "flat"
       - "hometree"
