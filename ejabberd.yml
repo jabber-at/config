@@ -24,11 +24,12 @@ shaper:
   fast: 50000
 
 # logging
-loglevel: 3
+loglevel: 1
 log_rotate_date: ""
 log_rotate_size: 0
 hide_sensitive_log_data: true
 
+max_fsm_queue: 5000
 # Disabling digest-md5 SASL mechanism to see what happens when we enable SCRAM
 # password hashing.
 disable_sasl_mechanisms: 
@@ -122,6 +123,7 @@ host_config:
     sql_database: 'SQL_DB_JABBER_AT'
     sql_username: 'SQL_USER_JABBER_AT'
     sql_password: 'SQL_PASS_JABBER_AT'
+    sql_keepalive_interval: 480
 
   "jabber.fsinf.at":
     domain_certfile: 'CERT_LOCATION_JABBER_FSINF_AT'
@@ -131,6 +133,8 @@ host_config:
     sql_database: 'SQL_DB_JABBER_FSINF_AT'
     sql_username: 'SQL_USER_JABBER_FSINF_AT'
     sql_password: 'SQL_PASS_JABBER_FSINF_AT'
+    sql_keepalive_interval: 480
+
   "fsinf.at": 
     domain_certfile: 'CERT_LOCATION_FSINF_AT'
     sql_type: 'SQL_TYPE'
@@ -139,6 +143,8 @@ host_config:
     sql_database: 'SQL_DB_FSINF_AT'
     sql_username: 'SQL_USER_FSINF_AT'
     sql_password: 'SQL_PASS_FSINF_AT'
+    sql_keepalive_interval: 480
+
   "jabber.zone":
     domain_certfile: 'CERT_LOCATION_JABBER_ZONE'
     sql_type: 'SQL_TYPE'
@@ -147,6 +153,8 @@ host_config:
     sql_database: 'SQL_DB_JABBER_ZONE'
     sql_username: 'SQL_USER_JABBER_ZONE'
     sql_password: 'SQL_PASS_JABBER_ZONE'
+    sql_keepalive_interval: 480
+
   "jabber.wien":
     domain_certfile: 'CERT_LOCATION_JABBER_WIEN'
     sql_type: 'SQL_TYPE'
@@ -155,6 +163,8 @@ host_config:
     sql_database: 'SQL_DB_JABBER_WIEN'
     sql_username: 'SQL_USER_JABBER_WIEN'
     sql_password: 'SQL_PASS_JABBER_WIEN'
+    sql_keepalive_interval: 480
+
   "xmpp.zone":
     domain_certfile: 'CERT_LOCATION_XMPP_ZONE'
     sql_type: 'SQL_TYPE'
@@ -163,3 +173,4 @@ host_config:
     sql_database: 'SQL_DB_XMPP_ZONE'
     sql_username: 'SQL_USER_XMPP_ZONE'
     sql_password: 'SQL_PASS_XMPP_ZONE'
+    sql_keepalive_interval: 480
