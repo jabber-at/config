@@ -3,6 +3,9 @@ modules:
   mod_admin_extra: {}
   mod_announce:
     access: admin
+  mod_avatar:
+      convert:
+        webp: jpeg
   mod_blocking: {}
   mod_block_strangers: {}
   mod_caps: {}
