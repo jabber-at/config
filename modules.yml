@@ -49,9 +49,8 @@ modules:
       - "flat"
       - "hometree"
       - "pep"
-# mod_push requires ejabbberd 17.08 or later
-#  mod_push: {}
-#  mod_push_keepalive: {}
+  mod_push: {}
+  mod_push_keepalive: {}
   mod_privacy: {}
   mod_private: {}
   mod_proxy65:
