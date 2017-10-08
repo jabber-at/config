@@ -57,7 +57,7 @@ define_macro:
   'MOD_MUC_LOG_OPTIONS':
     access_log: everybody
     timezone: local
-    outdir: "/var/local/ejabberd/"
+    outdir: "/var/local/ejabberd/logs/"
     file_permissions:
       mode: 644
       group: 33
