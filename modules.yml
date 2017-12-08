@@ -65,8 +65,7 @@ modules:
     max_connections: 10
     access: local
   mod_register:
-    # requires ejabberd-17.09  
-    #redirect_url: "https://jabber.at/account/register/"
+    redirect_url: "https://jabber.at/account/register/"
     access: register
     access_from: none
   mod_roster:
