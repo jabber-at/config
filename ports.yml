@@ -4,7 +4,6 @@ listen:
     module: ejabberd_sip
     tls: true
     certfile: 'CERT_LOCATION'
-    access: local
   - ip: "::"
     port: 5222
     module: ejabberd_c2s
@@ -33,6 +32,7 @@ listen:
   - ip: "::"
     port: 5269
     module: ejabberd_s2s_in
+    #TODO: access is not a valid option here, but how do we block servers
     access: s2s_access
     shaper: s2s_shaper
     max_stanza_size: 5242880
@@ -60,7 +60,6 @@ listen:
     turn_ip: "128.130.95.44"
     turn_min_port: 49152
     turn_max_port: 50000
-    access: local
   # TLS-protected http services
   - ip: "::"
     port: 5443
