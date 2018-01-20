@@ -61,9 +61,9 @@ listen:
     port: 5443
     module: ejabberd_http
     request_handlers: 
-      "ws": ejabberd_http_ws
+      "/ws": ejabberd_http_ws
+      "/http-bind": mod_bosh
     access: webchat
-    http_bind: true
     tls: true
     ciphers: 'TLS_CIPHERS'
     protocol_options: 'TLS_OPTIONS'
