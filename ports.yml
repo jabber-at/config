@@ -3,7 +3,6 @@ listen:
     port: 5061
     module: ejabberd_sip
     tls: true
-    certfile: 'CERT_LOCATION'
   - ip: "::"
     port: 5222
     module: ejabberd_c2s
@@ -26,7 +25,6 @@ listen:
     protocol_options: 'TLS_OPTIONS'
     ciphers: 'TLS_CIPHERS'
     dhfile: 'DHPARAM_LOCATION'
-    certfile: 'CERT_LOCATION_JABBER_AT'
     # see https://www.ejabberd.im/faq/tcp
     zlib: true
   - ip: "::"
@@ -47,7 +45,6 @@ listen:
       "/oauth": ejabberd_oauth
       "/api": mod_http_api
     tls: true
-    certfile: 'LOCAL_CERT_LOCATION'
     ciphers: 'TLS_CIPHERS'
     protocol_options: 'TLS_OPTIONS'
     dhfile: 'DHPARAM_LOCATION'
@@ -55,7 +52,6 @@ listen:
     port: 5349
     module: ejabberd_stun
     tls: true
-    certfile: 'CERT_LOCATION'
     use_turn: true
     turn_ip: "128.130.95.44"
     turn_min_port: 49152
@@ -69,7 +65,6 @@ listen:
     access: webchat
     http_bind: true
     tls: true
-    certfile: 'CERT_LOCATION'
     ciphers: 'TLS_CIPHERS'
     protocol_options: 'TLS_OPTIONS'
     dhfile: 'DHPARAM_LOCATION'
@@ -83,7 +78,6 @@ outgoing_s2s_families:
 outgoing_s2s_port: 5269
 outgoing_s2s_timeout: 300
 s2s_access: authenticated
-s2s_certfile: 'CERT_LOCATION'
 s2s_use_starttls: required
 s2s_protocol_options: 'TLS_OPTIONS'
 s2s_ciphers: 'TLS_CIPHERS'
