@@ -1,5 +1,5 @@
 These are the configuration files used for our ejabberd installation that hosts
-**jabber.at**, **jabber.wien** and **jabber.zone**. We use the Debian package
+**jabber.at**, **jabber.zone** and **xmpp.zone**. We use the Debian package
 for ejabberd available at apt.jabber.at, please see
 https://jabber.at/p/apt-repository/ for more information.
 
