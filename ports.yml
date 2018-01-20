@@ -30,8 +30,6 @@ listen:
   - ip: "::"
     port: 5269
     module: ejabberd_s2s_in
-    #TODO: access is not a valid option here, but how do we block servers
-    access: s2s_access
     shaper: s2s_shaper
     max_stanza_size: 5242880
   - ip: "127.0.0.1"
@@ -77,7 +75,7 @@ outgoing_s2s_families:
 
 outgoing_s2s_port: 5269
 outgoing_s2s_timeout: 300
-s2s_access: authenticated
+s2s_access: s2s_access
 s2s_use_starttls: required
 s2s_protocol_options: 'TLS_OPTIONS'
 s2s_ciphers: 'TLS_CIPHERS'
