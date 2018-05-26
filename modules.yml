@@ -14,6 +14,20 @@ modules:
     queue_chat_states: true
     queue_presence: true
   mod_configure: {}
+  mod_disco:
+    server_info:
+      - modules: [mod_muc]
+        name: "Chatroom logs"
+        urls: ["https://jabber.at/logs"]
+      - modules: all
+        name: "abuse-addresses"
+        urls: ["https://jabber.at/contact"]
+      - modules: all
+        name: "support-addresses"
+        urls: ["https://jabber.at/contact"]
+      - modules: all
+        name: "admin-addresses"
+        urls: ["https://jabber.at/contact"]
   mod_echo: {}
 # 2017-02-10: Deactivated b/c of current proxy setup
 #  mod_fail2ban:
@@ -85,68 +99,31 @@ modules:
 append_host_config:
   "jabber.at":
     modules:
-      mod_disco:
-        server_info:
-          - modules: [mod_muc]
-            name: "Chatroom logs"
-            urls: ["https://jabber.at/logs"]
-          - modules: all
-            name: "abuse-addresses"
-            urls: ["https://jabber.at/contact"]
-          - modules: all
-            name: "support-addresses"
-            urls: ["https://jabber.at/contact"]
-          - modules: all
-            name: "admin-addresses"
-            urls: ["https://jabber.at/contact"]
       mod_muc: 'MOD_MUC_OPTIONS'
       mod_muc_admin: {}
       mod_muc_log: 'MOD_MUC_LOG_OPTIONS'
 
-  "jabber.fsinf.at":
-    modules:
-      mod_disco: {}
-
+  "jabber.fsinf.at": {}
   "fsinf.at":
     modules:
-      mod_disco:
-        server_info:
-          - modules: [mod_muc]
-            name: "Chatroom logs"
-            urls: ["http://jabber.at/logs"]
       mod_muc: 'MOD_MUC_OPTIONS'
       mod_muc_admin: {}
       mod_muc_log: 'MOD_MUC_LOG_OPTIONS'
 
   "jabber.wien":
     modules:
-      mod_disco:
-        server_info:
-          - modules: [mod_muc]
-            name: "Chatroom logs"
-            urls: ["https://jabber.wien/logs"]
       mod_muc_admin: {}
       mod_muc: 'MOD_MUC_OPTIONS'
       mod_muc_log: 'MOD_MUC_LOG_OPTIONS'
 
   "jabber.zone":
     modules:
-      mod_disco:
-        server_info:
-          - modules: [mod_muc]
-            name: "Chatroom logs"
-            urls: ["https://jabber.zone/logs"]
       mod_muc: 'MOD_MUC_OPTIONS'
       mod_muc_admin: {}
       mod_muc_log: 'MOD_MUC_LOG_OPTIONS'
 
   "xmpp.zone":
     modules:
-      mod_disco:
-        server_info:
-          - modules: [mod_muc]
-            name: "Chatroom logs"
-            urls: ["https://xmpp.zone/logs"]
       mod_muc: 'MOD_MUC_OPTIONS'
       mod_muc_admin: {}
       mod_muc_log: 'MOD_MUC_LOG_OPTIONS'
