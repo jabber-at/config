@@ -90,6 +90,15 @@ append_host_config:
           - modules: [mod_muc]
             name: "Chatroom logs"
             urls: ["https://jabber.at/logs"]
+          - modules: all
+            name: "abuse-addresses"
+            urls: ["https://jabber.at/contact"]
+          - modules: all
+            name: "support-addresses"
+            urls: ["https://jabber.at/contact"]
+          - modules: all
+            name: "admin-addresses"
+            urls: ["https://jabber.at/contact"]
       mod_muc: 'MOD_MUC_OPTIONS'
       mod_muc_admin: {}
       mod_muc_log: 'MOD_MUC_LOG_OPTIONS'
