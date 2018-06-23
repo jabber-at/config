@@ -10,3 +10,4 @@ blocked.yml
 *.ucf-old
 /ejabberdctl.cfg
 /modules.d
+/certs/
