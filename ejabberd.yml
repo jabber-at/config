@@ -51,6 +51,7 @@ define_macro:
         access_admin: muc_admin
         min_message_interval: 1
         min_presence_interval: 5
+        max_user_conferences: 100
         default_room_options:
           moderated: false
           members_by_default: false
