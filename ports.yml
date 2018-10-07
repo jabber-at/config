@@ -50,10 +50,6 @@ listen:
     port: 5349
     module: ejabberd_stun
     tls: true
-    use_turn: true
-    turn_ip: "128.130.95.44"
-    turn_min_port: 49152
-    turn_max_port: 50000
   # TLS-protected http services
   - ip: "::"
     port: 5443
@@ -61,13 +57,13 @@ listen:
     request_handlers: 
       "/ws": ejabberd_http_ws
       "/http-bind": mod_bosh
-    access: webchat
     tls: true
     ciphers: 'TLS_CIPHERS'
     protocol_options: 'TLS_OPTIONS'
     dhfile: 'DHPARAM_LOCATION'
-    websocket_timeout: 3600
 # port 7777  is configured by mod_proxy65
+
+websocket_timeout: 3600
 
 # ipv6 is disabled for now
 outgoing_s2s_families: 

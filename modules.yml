@@ -39,9 +39,6 @@ modules:
     service_url: 'HTTP_UPLOAD_URL'
     max_size: 15728640 # 15 MiB
     rm_on_unregister: false
-  mod_irc:
-    access: authenticated
-    default_encoding: "utf-8"
   mod_last: {}
   mod_mam:
     default: always
