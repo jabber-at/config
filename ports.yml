@@ -1,9 +1,5 @@
 listen: 
   - ip: "::"
-    port: 5061
-    module: ejabberd_sip
-    tls: true
-  - ip: "::"
     port: 5222
     module: ejabberd_c2s
     max_stanza_size: 1048576
