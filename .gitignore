@@ -11,3 +11,4 @@ blocked.yml
 /ejabberdctl.cfg
 /modules.d
 /certs/
+/local/
