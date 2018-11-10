@@ -59,3 +59,7 @@ access:
     all: deny
   fail2ban:
     a_record: allow
+  protect_old_users:
+    admin: allow
+    api: allow
+    deny: all
