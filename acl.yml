@@ -1,12 +1,25 @@
-acl: 
-  admin: 
-    user: 
+###
+---
+
+acl:
+  admin:
+    user:
       - "klausi": "jabber.at"
       - "astra": "jabber.at"
       - "mati": "jabber.at"
+  local:
+    server:
+      - "jabber.at"
+      - "jabber.fsinf.at"
+      - "fsinf.at"
+      - "jabber.wien"
+      - "jabber.zone"
+      - "xmpp.zone"
   loopback:
     ip:
       - "127.0.0.0/8"
+      - "::1/128"
+      - "::FFFF:127.0.0.1/128"
   a_record:
     ip:
       - "138.201.246.149"
@@ -36,6 +49,10 @@ acl:
       - "js"
       # 2017-07-31: asks for credit card fraud sites
       - "dany-sy@jabberid.org"
+      - "ardelia.razavi639589@xmpp.bytesund.biz"
+      # 2020-04-20: credit card fraud stuff: https://www.nulled.to/topic/552986-feshop-credit-cards-selling/
+      - "fe-support1@jabberbot.ru"
+      - "fe-support2@jabberbot.ru"
     user_regexp: 
       - "^.*owner.*$"
       - "^.*admin.*$"
@@ -62,14 +79,6 @@ acl:
       - "jabber.zone"
   xmpp_zone:
     server:
-      - "xmpp.zone"
-  local: 
-    server: 
-      - "jabber.at"
-      - "jabber.fsinf.at"
-      - "fsinf.at"
-      - "jabber.wien"
-      - "jabber.zone"
       - "xmpp.zone"
   muc_admin: 
     user: 

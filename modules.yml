@@ -36,7 +36,7 @@ modules:
     max_inactivity: 300
   mod_http_upload:
     service_url: 'HTTP_UPLOAD_URL'
-    max_size: 15728640 # 15 MiB
+    max_size: 52428800 # 50 MiB
     rm_on_unregister: false
   mod_last: {}
   mod_mam:
@@ -56,14 +56,6 @@ modules:
   mod_pres_counter:
     count: 5
     interval: 60
-  mod_pubsub:
-    access_createnode: local
-    plugins:
-      - "flat"
-      - "hometree"
-      - "pep"
-  mod_push: {}
-  mod_push_keepalive: {}
   mod_privacy: {}
   mod_private: {}
   mod_proxy65:
@@ -74,6 +66,14 @@ modules:
     shaper: proxy_shaper
     max_connections: 10
     access: local
+  mod_pubsub:
+    access_createnode: local
+    plugins:
+      - "flat"
+      - "hometree"
+      - "pep"
+  mod_push: {}
+  mod_push_keepalive: {}
   mod_register:
     redirect_url: "https://jabber.at/account/register/"
     access: register
